@@ -1,0 +1,179 @@
+// .zpl_topmnu {
+//   ~.zpl_container {
+//     top: $tband;
+//   }
+// }
+.zpl_topmnu {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    @include position(fixed, 0, auto, auto, 90px);
+    gap: 10px;
+    height: $navbar;
+    z-index: 1;
+    color: var(--white);
+    b {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-bottom: 1px;
+        font-size: var(--fontSz16);
+        //margin-inline-end: 10px;
+        //border-right: 1px solid var(--navclrbdr);
+        padding-inline-end: 20px;
+        +.tab-pane {
+            &::before {
+                border-left: 1px solid var(--navclrbdr);
+                content: '';
+                display: inline-block;
+                width: 1px;
+                height: 18px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .zpl_rgt {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1 1 0;
+    }
+    .clsArw {
+        i {
+            border-radius: 4px;
+            background-color: #273352;
+            color: var(--white);
+        }
+        &:hover {
+            i {
+                background-color: var(--actioncolor);
+            }
+        }
+    }
+    .tab-pane {
+        &>li {
+            &>a {
+                color: #d1d1d1;
+                // color: var(--white);
+                &::before {
+                    bottom: -8px;
+                }
+                &:hover {
+                    color: var(--white);
+                    // &::before {
+                    //     background-color: var(--thmbluclr);
+                    // }
+                }
+            }
+            &.zpl_act {
+                &>a {
+                    color: #fff;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.tab-pane {
+    margin: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    >li {
+        >a {
+            padding: 10px 15px;
+            position: relative;
+            font-size: var(--fontSz14);
+            color: var(--txt6clr);
+            transition: all .3s ease;
+            border-radius: $radiuscommon;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -13px;
+                width: calc(100% - 20px);
+                height: 4px;
+                left: 10px;
+                border-radius: 2px;
+            }
+            &:hover {
+                // background-color: #f9fafc;
+                color: var(--txt2clr);
+                &::before {
+                    background-color: transparent;
+                }
+            }
+        }
+        &.zpl_act {
+            &:hover {
+                >a {
+                    background-color: transparent;
+                }
+            }
+            >a {
+                // color: var(--txt2clr);
+                // font-weight: var(--fontSemibold);
+                &::before {
+                    background-color: var(--thmbluclr);
+                }
+            }
+        }
+    }
+}
+
+.clsArw {
+    color: var(--txt2clr);
+    font-size: var(--fontSz18);
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    i {
+        padding: 6px;
+        font-size: var(--fontSz14);
+        transition: all 0.2s;
+        border-radius: 50%;
+        display: inline-flex;
+        background-color: var(--thmscnclr);
+        color: var(--txt2clr);
+        font-style: normal;
+    }
+    &:hover {
+        i {
+            --txt2clr: var(--txtclrw);
+            --thmscnclr: var(--actioncolor);
+        }
+    }
+}
+
+.zpl_glscrmdl {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    background: var(--white);
+    right: 0;
+    min-height: 300px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.10%);
+    z-index: 11;
+    display: none;
+    .zpl_glscrcnt {
+        padding-top: 40px;
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+    }
+    .zpl_glscrhdr {
+        .IC-cls {
+            width: 30px;
+            height: 30px;
+            background-color: #f0f3f8;
+            margin-left: auto;
+            color: var(--txt2clr);
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+}

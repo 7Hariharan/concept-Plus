@@ -1,0 +1,64 @@
+.zpl_rpane {
+    @include position(absolute, $navbar, 0, 0,auto);
+    width: $rpane;
+    background-color: var(--thmbg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 24px;
+    ul {
+        li {
+            margin-top: 14px;
+            font-size: 15px;
+            text-align: center;
+            &:first-child {
+                margin-top: 0;
+            }
+            .PI_referal,
+            .PI_askhr,
+            .PI_subscription,
+            .PI_notes1,
+            .PI_help1,
+            .PI_thememod {
+                @include radius;
+                height: 26px;
+                width: 26px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .fil {
+                font-size: 22px;
+            }
+            .PI_thememod {
+                font-size: 16px;
+                // border: 1px solid #979797;
+                line-height: 14px;
+            }
+            .PI_referal,
+            .PI_askhr,
+            .PI_subscription,
+            .PI_notes1,
+            .PI_help1 {
+                border: 1px solid transparent;
+            }
+            .PI_referal {
+                border-color: #8775b5;
+            }
+            .PI_askhr {
+                border-color: #417ec1;
+            }
+            .PI_subscription {
+                border-color: var(--primaryylwclr);
+            }
+            .PI_notes1 {
+                border-color: #619a5b;
+            }
+            .PI_help1 {
+                border-color: #7d6ead;
+            }
+        }
+    }
+}

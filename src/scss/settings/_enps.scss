@@ -1,0 +1,66 @@
+.zpl_lstDisc{
+    list-style-type: disc;
+    margin-left: 13px;
+    li {
+        margin-top: 10px;
+        &:first-child {
+            margin: 0;
+        }
+    }
+}
+
+.zpl_enpsCrd {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 0;
+}
+
+.zpl_enpsLst {
+    box-shadow: $boxshow;
+    border-radius: 8px;
+    background-color: var(--thmbg);
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    gap: 5px;
+    padding: 20px;
+    max-height: 135px;
+    cursor: pointer;
+    >label {
+        font-weight: var(--fontSemibold);
+    }
+    >em {
+        font-size: var(--fontSz12);
+    }
+    >font{
+        font-size: var(--fontSz12);
+        &.zpl_orng{
+            color: #ff971b;
+        }
+        &.zpl_grn{
+            color: #31af74;
+        }
+    }
+    .zpl_prgbr{
+        position: relative;
+        margin-top: 20px;
+        >span{
+            position: absolute;
+            right: 0;
+            bottom: 7px;
+            font-size: var(--fontSz11);
+            font-weight: var(--fontLight);
+        }
+    }
+    .zpl_cmplStat{
+        color: var(--txt8clr);
+        font-size: 12px;
+        font-weight: var(--fontLight);
+        margin-top: 10px;
+        >b{
+            color: var(--black);
+            font-weight: var(--fontSemibold);
+        }
+    }
+}

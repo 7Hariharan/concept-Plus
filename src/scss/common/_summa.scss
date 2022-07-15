@@ -1,0 +1,144 @@
+.zpl_mdl {
+    right: -40px !important;
+}
+
+.zpl_rgtcnt {
+    .tab-pane {
+        >li {
+            >a {
+                font-size: 13px;
+                padding: 9px 15px;
+            }
+        }
+        .PI_more {
+            margin-left: 16px;
+        }
+    }
+}
+
+.zpl_container,
+.zpl_iwrprrgt>div {
+    padding: 0 !important;
+}
+
+.mangvw,
+.admnvw {
+    display: none;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mang {
+    .mangvw {
+        pointer-events: unset;
+        visibility: visible;
+        display: block;
+    }
+}
+
+.admn {
+    .mangvw,
+    .admnvw {
+        pointer-events: unset;
+        visibility: visible;
+        display: block;
+    }
+}
+
+.custmvw {
+    display: none !important;
+}
+
+.custm {
+    .custmvw {
+        display: flex !important;
+    }
+}
+
+.zpl_frmmove {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    bottom: 0;
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    .zpl_frmhead {
+        padding: 24px 20px 10px !important;
+    }
+    .zpl_frmservices {
+        .zpl_frmout {
+            background-color: transparent !important;
+        }
+        .zpl_ssearch {
+            background-color: transparent !important;
+        }
+        .zpl_drpopen {
+            &:before {
+                display: none;
+            }
+        }
+        ul>li>div {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+.notfiy {
+    background-color: #ff2727;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    &.numb {
+        height: unset;
+        width: unset;
+        padding: 5px;
+        border-radius: 50px;
+        /* min-width: 14px; */
+        color: #fff;
+        font-size: 10px;
+        line-height: 5px;
+        top: -1px !important;
+        right: 0px !important;
+    }
+}
+
+.zpl_lmnulst {
+    >div {
+        position: relative;
+    }
+    .notfiy {
+        top: 7px;
+        right: 22px;
+    }
+}
+
+.tab-pane {
+    .notfiy {
+        top: 6px;
+        right: 5px;
+    }
+}
+
+.zpl_rgtcnt {
+    .notfiy {
+        top: 3px;
+    }
+}
+
+.plus {
+    color: red !important;
+}
+
+.zpl_header .zpl_mnLgo {
+    width: 30px;
+    margin: 14px 22px 0;
+}
+
+.zpl_frmmove .zpl_frmservices .zpl_frmout {
+    max-height: 100% !important;
+}

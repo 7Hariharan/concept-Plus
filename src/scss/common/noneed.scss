@@ -1,0 +1,20 @@
+   /* IC removal style */
+   
+   //    [class^="IC-"],
+   //    [class*=" IC-"],
+   //    [class^="CR-"],
+   //    [class*=" CR-"] {
+   //        position: relative;
+   //        &::before {
+   //            display: none !important;
+   //        }
+   //        &:after {
+   //            content: "";
+   //            position: absolute;
+   //            top: 0;
+   //            left: 0;
+   //            padding: 3px;
+   //            border-radius: 50%;
+   //            background-color: red;
+   //        }
+   //    }

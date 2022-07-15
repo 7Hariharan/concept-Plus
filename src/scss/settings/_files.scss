@@ -1,0 +1,262 @@
+.IC-pdf,
+.IC-doc,
+.IC-mp3,
+.IC-zip,
+.IC-xls-new,
+.IC-ppt,
+.IC-jpg,
+.IC-gif,
+.IC-file,
+.IC-code,
+.IC-link,
+.IC-wd {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    background-image: url(../images/FileIcons.svg);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 23px;
+}
+
+.IC-wd {
+    background-position: -103px -50px;
+}
+
+.IC-pdf {
+    background-position: 0px 0px;
+}
+
+.IC-doc {
+    background-position: -40px 0px;
+}
+
+.IC-mp3 {
+    background-position: -79px 0px;
+}
+
+.IC-zip {
+    background-position: -120px 0px;
+}
+
+.IC-xls-new {
+    background-position: -160px 0px;
+}
+
+.IC-ppt {
+    background-position: -200px 0px;
+}
+
+.IC-jpg {
+    background-position: -240px 0px;
+}
+
+.IC-gif {
+    background-position: -283px 0px;
+}
+
+.IC-code {
+    background-position: -323px 0px;
+}
+
+.IC-file {
+    background-position: -402px 0px;
+}
+
+.IC-link {
+    background-position: -363px 0px;
+}
+
+.S18 {
+    font-size: 18px;
+}
+
+.CR-ack-success,
+.CR-ack-pending {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #F5F5F9;
+    border-radius: 100%;
+    text-align: center;
+    color: var(--txt8clr);
+    cursor: pointer;
+}
+
+.zpl_icnBg {
+    >i {
+        --iconbgsize: 25px;
+        display: inline-block;
+        width: var(--iconbgsize);
+        background-color: var(--bordercolor);
+        border-radius: 100%;
+        height: var(--iconbgsize);
+        text-align: center;
+        line-height: 29px;
+        color: var(--txt8clr);
+        cursor: pointer;
+        margin-right: 3px;
+    }
+}
+
+.CR-ack-success.blck::before {
+    color: #333;
+}
+
+.zpl_hvr {
+    &.zpl_vsbl {
+        display: block;
+    }
+}
+
+.PI_more.blck::before {
+    color: #333;
+}
+
+.CR-fld {
+    font-size: 26px;
+    .path1,
+    .path2 {
+        font: inherit;
+    }
+    .path1 {
+        &::before {
+            color: #ffad00;
+        }
+    }
+    .path2 {
+        &::before {
+            color: #ffdf8c;
+        }
+    }
+}
+
+// HAMBURGER STYLES 
+.ham_hm {
+    font-size: 20px;
+}
+
+// Document Details Styles
+.zpl_dtails {
+    thead {
+        tr {
+            th {
+                background-color: var(--siderbaractcolor);
+                padding: 10px;
+                color: var(--txt6clr);
+                font-weight: var(--fontSemibold);
+                font-size: 12px;
+                &:first-child {
+                    border-radius: 4px 0 0 4px;
+                    padding-left: 16px;
+                }
+                &:last-child {
+                    border-radius: 0 4px 4px 0;
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                padding: 10px;
+                border-bottom: 1px solid var(--bordercolor);
+                height: 60px;
+                width: 100%;
+                .zswitch {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                &:nth-child(2n) {
+                    float: right;
+                    >div {
+                        text-align: right;
+                        width: 100%;
+                    }
+                }
+            }
+            &:hover {
+                i.PI_drag {
+                    opacity: 1;
+                }
+            }
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+.zpl_docRec {
+    .w650 {
+        width: 650px;
+    }
+    .zpl_fpercnt {
+        margin-left: 30px !important;
+        margin-right: 30px;
+    }
+    .IC-ar-dwn {
+        margin-left: 25px !important;
+        margin-top: 10px;
+    }
+    .CR-sign {
+        --iconroundsize: 30px;
+        display: inline-block;
+        width: var(--iconroundsize);
+        background-color: var(--bordercolor);
+        border-radius: 100%;
+        height: var(--iconroundsize);
+        text-align: center;
+        line-height: var(--iconroundsize);
+        cursor: pointer;
+    }
+}
+
+// GAP STYLES 
+.zpl_gap2 {
+    gap: 2%;
+}
+
+// ADMIN EMPLOYEE IMPORT STYLES
+.intgrtion_con.zsign_cstm {
+    &.empImp_Con {
+        .zpl_crd {
+            // bottom: 230px;
+            position: relative;
+            left: 0;
+            .zpl_crdcnt {
+                padding: 15px 30px 30px;
+            }
+            &Scrl {
+                position: absolute;
+                left: 20px;
+                right: 0px;
+                top: 0;
+                bottom: 80px;
+                overflow-y: auto;
+                padding-right: 20px;
+            }
+        }
+        .zsign_btm {
+            padding: 0;
+            &.btm_mview {
+                &+.zpl_crd {
+                    bottom: 60px;
+                }
+                &+.zpl_crdScrl {
+                    bottom: 80px;
+                }
+            }
+            &+.zpl_crdScrl {
+                bottom: 245px;
+            }
+        }
+    }
+}
+
+.empImp_Con {}

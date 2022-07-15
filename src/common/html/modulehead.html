@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zoho People - @@title</title>
+    <link type="image/x-icon" rel="icon" href="../images/People.ico" sizes="32x32">
+    <meta name="viewport" content="width=1024">
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <!--Stylesheet -->
+    <link href="../css/common/zpfont.css" rel="stylesheet" type="text/css">
+    <link href="../css/common/peopleicon.css" rel="stylesheet" type="text/css">
+    <link href="../css/components/zohocomponents.css" rel="stylesheet" type="text/css" />
+    <link href="../css/components/zohomarkups.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/settings/setting.css" rel="stylesheet" type="text/css">
+    <!--Script -->
+    <script src="../common/js/jquery.min.js"></script>
+    <script src="../common/js/handlebars.js"></script>
+    <script src="../common/js/zohocomponents.js"></script>
+    <script src="../common/js/ztabbebdlistbox.js"></script>
+    <script src="../common/js/hbs_output.js"></script>
+    <script src="../js/hbs_output.js"></script>
+    <script src="../common/js/data.js"></script>
+    <script src="@@settingshbs"></script>
+    <script src="../js/peoplecomponent.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function changeCSS(cssLinkIndex) {
+            var newlink = document.createElement("link");
+            newlink.rel = 'stylesheet';
+            newlink.type = 'text/css';
+            newlink.href = '../css/settings/custom_jk.css';
+            document.getElementsByTagName('HEAD')[0].appendChild(newlink);
+        }
+    </script>
+</head>
+
+<body class="">
+    <div class="zpl_cvr">
+        <nav class="zpl_Nav" id="topnav">
+
+        </nav>
+        <div class="zpl_glscrmdl" data-modal-box="zpl_glsrch">
+            <div class="zpl_glscrcnt">
+                <div class="zpl_glscrhdr">
+                    <a class="IC-cls"></a>
+                </div>
+            </div>
+        </div>
+        <div class="zpl_rpane" id="rgtnav">
+
+        </div>

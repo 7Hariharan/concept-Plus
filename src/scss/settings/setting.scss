@@ -1,0 +1,325 @@
+@import '../common/mixins';
+@import '../common/variables';
+@import 'peoplecomponents';
+@import 'mainmodal'; // temp
+@import 'popup'; // done
+@import 'table'; // done
+@import 'junk';
+@import 'card'; // done
+@import 'cardsection'; // done
+@import 'dropdown'; // done
+//@import 'zpbase';
+@import 'setlanding';
+@import 'form'; // done
+@import 'activity'; // done
+// @import 'files';
+@import 'timely'; // done
+//Modulebased Css
+@import 'integration'; //   
+// @import 'fileattach';
+// @import 'automation';
+@import 'cases';
+@import 'blueprint';
+@import 'permission';
+@import 'patch';
+@import 'adminoperation';
+@import 'organisation';
+@import 'files';
+@import 'hvrmode';
+@import 'usrcard';
+@import 'templatecard';
+@import 'contentmanager';
+@import 'subscription';
+@import 'pms';
+@import 'career';
+@import 'import';
+@import 'compsetting';
+@import 'qa';
+@import 'quebank';
+@import 'dataadministration';
+@import 'enps';
+// @import 'hovereffects';
+
+/****** Setting Page Start**********/
+
+//Setting Mani Css Start
+.zpl_container {
+    @include position(absolute, 0, 0, 0, 0);
+    // position: absolute;
+    // inset: 0;
+    padding: 0 0 20px 20px;
+    overflow-y: auto;
+    background: var(--thmgryclr);
+}
+
+// .setng {
+//   // position: relative;
+//   // overflow-y: auto;
+//   &_cnt {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-top: 20px;
+//   }
+//   &_top {
+//     display: flex;
+//     justify-content: center;
+//     margin: 50px 0;
+//     .bxcard {}
+//   }
+//   &_btm {
+//     display: flex;
+//     justify-content: center;
+//     .bxcard {
+//       padding: 30px 20px;
+//       min-width: 230px;
+//     }
+//   }
+// }
+.zpl_search {
+    width: 600px;
+    border-radius: 8px;
+    background-color: var(--thmbg);
+    position: relative;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.025);
+    transition: all ease-in .3s;
+    // padding-right: 20px;
+    display: flex;
+    align-items: center;
+    &.zpl_srchsml {
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.06);
+        input {
+            padding: 12px 40px 12px 16px;
+            font-size: 14px;
+            border-radius: 6px;
+        }
+        i {
+            right: 8px;
+            font-size: 16px;
+        }
+    }
+    &:hover {
+        box-shadow: 0 15px 25px 10px #ebebef;
+    }
+    input {
+        width: 100%;
+        border: 0;
+        padding: 19px 60px 19px 20px;
+        background: transparent !important;
+        outline: 0;
+        font-size: var(--fontSz16);
+        height: unset;
+        border: none !important;
+        &:focus {
+            border: none;
+        }
+        &::placeholder {
+            color: #8B8B8B;
+            font-size: inherit;
+        }
+    }
+    i {
+        padding: 10px;
+        cursor: pointer;
+        font-size: var(--fontSz18);
+        color: var(--txt6clr);
+        position: absolute;
+        right: 12px;
+    }
+}
+
+.zpl_minsrc {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+    bottom: auto;
+    max-height: 300px;
+    box-shadow: 0px 0px 6px #00000038;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px 0;
+    background-color: var(--thmbg);
+    display: none;
+    li {
+        padding: 10px 20px;
+        display: flex;
+        //border-bottom: 1px dotted #7070703E;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content: '';
+            border-bottom: 1px dotted #7070703E;
+            @include position(absolute, auto, 20px, 0, 20px);
+            // position: absolute;
+            // inset: auto 20px 0 20px;
+        }
+        &:hover {
+            background-color: var(--drophover);
+        }
+        &:last-child {
+            border-bottom: none;
+            &::before {
+                content: none;
+            }
+        }
+        mark {
+            background-color: #F2F4FA;
+        }
+    }
+}
+
+//Setting Mani Css End
+// .bxcard {
+//   display: inline-flex;
+//   padding: 30px;
+//   border-radius: 14px;
+//   background-color: var(--thmbg);
+//   position: relative;
+//   transform: translateY(1px);
+//   transition: all 0.5s;
+//   max-width: 520px;
+//   cursor: pointer;
+//   &+.bxcard {
+//     margin-left: 35px;
+//   }
+//   &:hover {
+//     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.04);
+//     transform: translateY(-1px);
+//     .PI_back {
+//       &::after {
+//         opacity: 1;
+//         visibility: visible;
+//         transform: scale(1);
+//       }
+//     }
+//   }
+//   &._act {
+//     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+//   }
+//   &_cnt {
+//     h5 {
+//       font-size: var(--fontSz22);
+//       color: var(--txt2clr);
+//       margin: 0 0 20px;
+//       font-weight: var(--fontMedium);
+//     }
+//     p {
+//       color: var(--txt6clr);
+//       font-size: var(--fontSz14);
+//       margin-bottom: 0;
+//       line-height: 20px;
+//       letter-spacing: 0.65px;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       display: -webkit-box;
+//       -webkit-box-orient: vertical;
+//       -webkit-line-clamp: 4;
+//       max-height: 80px;
+//     }
+//   }
+//   &._W500 {
+//     width: 500px;
+//   }
+//   &._H200 {
+//     height: 200px;
+//   }
+//   // .PI_back {
+//   //   margin-top: auto;
+//   //   font-size: 20px;
+//   //   color: #666;
+//   //   transform: rotate(-90deg);
+//   //   margin-right: 10px;
+//   //   &::before {
+//   //     position: relative;
+//   //     z-index: 1;
+//   //   }
+//   //   &::after {
+//   //     content: '';
+//   //     position: absolute;
+//   //     width: 40px;
+//   //     height: 40px;
+//   //     background: #eef2ff;
+//   //     border-radius: 100%;
+//   //     top: 0px;
+//   //     left: -10px;
+//   //     right: 0;
+//   //     bottom: 0;
+//   //     margin: auto;
+//   //     visibility: hidden;
+//   //     opacity: 0;
+//   //     transform: scale(0);
+//   //     transition: all 0.5s;
+//   //   }
+//   // }
+//   &_lst {
+//     font-size: 15px;
+//     &._IClst {
+//       padding-left: 30px;
+//     }
+//     li {
+//       margin-bottom: 20px;
+//       position: relative;
+//       color: var(--txt4clr);
+//       cursor: pointer;
+//       &:hover {
+//         color: #4b89dc;
+//       }
+//     }
+//     li.bxcard_lstHd {
+//       font-weight: var(--fontBold);
+//       margin-bottom: 22px;
+//       color: var(--txt2clr);
+//       cursor: default;
+//       i {
+//         position: absolute;
+//         left: -30px;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         font-size: 20px;
+//       }
+//     }
+//   }
+//   &._W250 {
+//     width: 250px;
+//   }
+//   &._Hmin300 {
+//     min-height: 300px;
+//   }
+// }
+
+/*****Setting Table ******/
+
+// Hari Table changes 
+// .srchinput {
+//   position: relative;
+//   min-width: 250px;
+//   &::before {
+//     content: "\f189";
+//     font-family: "zpfont";
+//     position: absolute;
+//     right: 10px;
+//     top: 8px;
+//     color: #777;
+//     z-index: 1;
+//     cursor: pointer;
+//   }
+//   .ztextbox {
+//     padding-right: 36px;
+//     border: none;
+//     border-radius: 4px;
+//     box-shadow: $boxshow;
+//     &::placeholder {
+//       color: #888;
+//     }
+//   }
+//   .zselectbox {
+//     padding-left: 40px;
+//   }
+// }
+
+/*****Setting Table ******/
+
+
+/********** Settings Page End *************/

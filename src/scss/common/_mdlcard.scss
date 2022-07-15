@@ -1,0 +1,446 @@
+/*********** common style start **********/
+.zpl_bggry {
+	background: #f6f6f6;
+	padding: 20px;
+}
+.zpl_bgwhit {
+	background: var(--white);
+	padding: 20px;
+}
+.zpl_emcrdlst{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 0fr));
+	gap: 20px;
+    &.zpl_tmember{
+        grid-template-columns: repeat(auto-fill, minmax(380px, 0fr)); 
+    }
+}
+.zpl_emcrd{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--crdshdw);
+    padding: 20px;
+    min-height: 300px;
+    position: relative;
+    .zpl_emcrdcnt{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: relative;
+    }
+    .zpl_emcrdftr{
+        margin-top: auto;
+        border-top: 1px solid #f2f2f2;
+        padding-top: 15px;
+    }
+}
+.onlin {
+	background: var(--primarygrnclr);
+}
+.onlin, .oflin, .idle, .busy{
+	width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+	right: -4px;
+	bottom: -2px;
+}
+.zpl_emstus{
+    border-radius: 6px;
+    padding: 6px 10px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    gap: 20px;
+    &.zpl_oficein{
+        background: var(--primarygrnligtclr);
+        color: var(--primarygrnclr);
+    }
+    &.zpl_sl{
+        background: var(--primaryredligtclr);
+        color: var(--primaryredclr);
+    }
+    &.zpl_dty{
+        background: var(--primarybluligtclr);
+        color: var(--primarybluclr);
+    }
+    &.zpl_permsn{
+        background: var(--primaryylwligtclr);
+        color: var(--primaryylwclr);
+        width: 100%;
+    }
+}
+.zpl_emrole {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.zpl_emprog {
+    .zpl_progtitle {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.section_title {
+	margin: 20px 0;
+}
+/*********** common style end **********/
+/*********** direct reportees start ***********/
+.zpl_dirctreprtis {
+	.zpl_addfav {
+        i{
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        }
+	}
+    .txttrim{
+        width: auto;
+        max-width: 100%;
+    }
+	.zpl_emchat {
+		display: none;
+	}
+    .zpl_emcrd{
+        &:hover {
+            .zpl_emchat {
+                ::before {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px #ddd;
+                    background: var(--white);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                cursor: pointer;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.zpl_dirctreprtis,
+.zpl_tmlve{
+    .zpl_emcrd{
+        .zpl_em {
+            align-items: end;
+            .zpl_emimg{
+                overflow: visible;
+            }
+        }
+    }
+}
+/*********** direct reportees end ***********/
+/*********** team leave start **********/
+.zpl_tmlvestus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    b, span{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/*********** team leave end **********/
+/*********** Approval left panel start **********/
+.zpl_aprvlft{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0fr));
+	gap: 5px;
+}
+.zpl_aprvemcrd {
+    background: #e4e6ef;
+    border-radius: 6px;
+    display: flex;
+    padding: 15px 12px 12px;
+    gap: 5px;
+    .zpl_em {
+        align-items: normal;
+        .zpl_emimg {
+            border-radius: 10px;
+            border: 0;
+        }
+        .zpl_emdts {
+            line-height: 20px;
+            div {
+                em {
+                    display: flex;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    &.zpl_act {
+        background: var(--white);
+        border: 1px solid #0088ff67;
+        border-left: 3px solid #0088ff;
+    }
+}
+/*********** Approval left panel end **********/
+/*********** Approval right panel start **********/
+.zpl_aprvlrgt{
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 0fr));
+	gap: 20px;
+}
+.zpl_aprvcrd {
+	background: var(--white);
+	padding: 20px;
+	border-radius: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	.zpl_atendtls {
+		display: flex;
+		gap: 30px;
+		flex-direction: column;
+        .zpl_slb{
+            width: 85%;
+            gap: 50px;
+        }
+	}
+	.zpl_lvebalnc {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+    .zpl_slbalnc {
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+        b {
+            font-size: 28px;
+        }
+        em {
+            font-size: var(--fontSz16);
+        }
+    }
+	.zpl_idiv{
+		justify-content: flex-end;
+        margin-top: 10px;
+	}
+}
+.zpl_lvlst{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    +.zpl_lvlst{
+        border-top: 1px solid #EBECED;
+        padding-top: 18px;
+    }
+}
+.zpl_tmdtls{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.zpl_slb {
+	display: flex;
+	justify-content: space-between;
+}
+.zpl_punch {
+    display: flex;
+    gap: 50px;
+}
+.zpl_emlve {
+	background: #F6F7FB;
+	padding: 15px;
+	margin: 10px 0;
+	border-radius: 12px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	.zpl_emlvergt {
+		.zpl_em{
+			gap: 20px;
+		}
+		.zpl_emimg {
+			overflow: visible;
+			display: flex;
+			img {
+				border: 2px solid #fff;
+				border-radius: 12px;
+				margin: 0 -5px;
+			}
+		}
+	}
+}
+.zpl_arwlst {
+	display: flex;
+	gap: 10px;
+	div {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.zpl_aprvlst{
+    display: flex;
+    flex-direction: column;
+	gap: 20px;
+}
+.zpl_aprv_stus {
+	display: flex;
+	justify-content: space-between;
+	.zpl_rgtaprv {
+		display: flex;
+		gap: 5px;
+	}
+    +.zpl_aprv_stus{
+        border-top: 1px solid #EBECED;
+        padding-top: 18px;
+    }
+}
+.zpl_tick {
+	background: #30bc8a;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+}
+.zpl_bradscr {
+	display: flex;
+	justify-content: space-between;
+	.zpl_bradlevl {
+		display: flex;
+		gap: 5px;
+		b {
+		    font-size: var(--fontSz20);
+		}
+	}
+	.zpl_bradtxt {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+		em{
+			font-size: var(--fontSz12);
+		}
+	}
+}
+//approval rgt panel time log card
+.zpl_tblcrd {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	table {
+		tr {
+			td,
+			th {
+				font-weight: var(--fontRegular);
+				padding: 0 10px 25px 0;
+			}
+		}
+		tfoot {
+			td {
+				padding: 20px 0;
+                background: #F6F7FB;
+                &:first-child{
+                    padding-left: 12px;
+                    border-radius: 6px 0 0 6px;
+                }
+                &:last-child{
+                    border-radius: 0 6px 6px 0;
+                }
+			}
+		}
+	}
+	.d-flexC {
+		gap: 10px;
+	}
+}
+.zpl_viewdays {
+	display: flex;
+	align-items: center;
+}
+.dytyp {
+	padding-left: 10px;
+	display: flex;
+    flex-direction: column;
+    gap: 3px;
+	span {
+		display: block;
+	}
+	&.nosubmt {
+		position: relative;
+		border: 1px solid #979797;
+		border-radius: 4px;
+		padding: 6px 50px 3px 20px;
+		height: 50px;
+		span:nth-child(2) {
+			display: inline;
+		}
+		a {
+			position: absolute;
+			right: 20px;
+		}
+	}
+}
+.drkgrn_bodr {
+    border-left: 3px solid #9eba55;
+}
+.grn_bodr {
+    border-left: 3px solid #2bbe8b;
+}
+.red_bodr {
+    border-left: 3px solid red;
+}
+.blu_bodr {
+    border-left: 3px solid #0088ff;
+}
+.zpl_tmly {
+    margin: auto;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--bordercolor);
+    border-radius: 8px;
+    font-size: var(--fontSz14);
+    display: flex;
+    flex-direction: column;
+    b {
+        font-size: var(--fontSz24);
+    }
+}
+/*********** Approval right panel end **********/
+/*********** Team member details start ********/
+.zpl_tmember {
+	position: relative;
+	.zpl_emcrd{
+		gap: 15px;
+		min-height: auto;
+	}
+	.zpl_em{
+		+.zpl_em {
+			border-top: 1px solid #EBECED;
+			padding-top: 15px;
+		}
+	}
+}
+.zpl_tmtitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&::before {
+		position: absolute;
+		left: 0;
+		height: 25px;
+		width: 4px;
+		background: #FF9D00;
+		border-radius: 10px;
+		content: "";
+		clear: both;
+	}
+}
+/*********** Team member details end ********/

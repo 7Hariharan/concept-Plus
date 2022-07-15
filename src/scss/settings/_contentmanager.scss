@@ -1,0 +1,120 @@
+.zpl_cnt_mngr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    >div {
+        // padding: 2px;
+        background-color: var(--thmbg);
+        @include radius();
+        width: 194px;
+        position: relative;
+        transition: all 0.26s ease;
+        cursor: pointer;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.01);
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 0px 17px 23px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            .zpl_cntftr>font {
+                display: block;
+            }
+        }
+        .zpl_cntimg {
+            height: 140px;
+            width: 100%;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px 5px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+            i {
+                position: relative;
+                font-size: 28px;
+                z-index: 0;
+                color: #596488;
+            }
+        }
+        .zpl_cntftr {
+            padding: 14px 14px 12px 14px;
+            position: relative;
+            >h4 {
+                font-size: 14px;
+                margin: 0;
+                color: var(--txt2clr);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            >p {
+                margin-top: 5px;
+                font-size: 12px;
+                font-weight: var(--fontRegular);
+                color: var(--txt8clr);
+                text-transform: uppercase;
+                span {
+                    position: relative;
+                    &:not(:first-child) {
+                        padding-left: 8px;
+                        margin-left: 8px;
+                        &::before {
+                            content: "";
+                            height: 3px;
+                            width: 3px;
+                            border-radius: 50%;
+                            background-color: #bfc5d3;
+                            position: absolute;
+                            left: -2px;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                        }
+                    }
+                }
+            }
+            >font {
+                position: absolute;
+                right: 16px;
+                top: 16px;
+                display: none;
+                i {
+                    padding: 5px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    border-radius: 50%;
+                    &:hover {
+                        background-color: var(--thmscnclr);;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zpl_fl_typ {
+    position: relative;
+    display: inline-block;
+    &::before {
+        background: #eef1f7;
+        height: 74px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        border: 6px solid #dfe4ee;
+        border-right: 6px solid #fff;
+        border-top: 6px solid #fff;
+        top: -1px;
+        right: -1px;
+        border-radius: 3px;
+    }
+}

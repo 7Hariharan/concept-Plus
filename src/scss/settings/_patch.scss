@@ -1,0 +1,72 @@
+// 4.0
+.cont-wrap {
+    // font-family: Latoweb;
+    b,
+    strong,
+    .zpl_tblres .zpl_tbl tr td b,
+    .zpl_intelst h3,
+    .zpl_dtbl>ul li,
+    .zpl_comp .zpl_drop.zpl_drpr::after,
+    .zpl_comp .zpl_drop>.PI_cls::before,
+    .zpl_comp .zpl_drop .zpPbar .PI_cls::before,
+    .zpl_tblres .zpl_tbl tr th .zpl_info i::before,
+    .zpl_secn h5,
+    .zpl_secn h4,
+    .zpl_crd .zpl_crdhdr h4 {
+        // font-weight: 500;
+        font-family: latobold;
+    }
+    .zpl_crd .zpl_crdhdr h4 {
+        margin: 0;
+    }
+    .zpl_container {
+        left: 70px;
+        top: 45px;
+    }
+    .zpl_topmnu {
+        left: 70px;
+        top: 45px;
+        ~.zpl_container {
+            top: 105px;
+        }
+    }
+    .zpl_fbtn {
+        left: 70px;
+        bottom: 25px;
+    }
+}
+
+.tban {
+    .zpl_mdl {
+        top: 40px;
+        height: calc(100% - 68px) !important;
+        &.zpl_mfull{
+            top:85px;
+        }
+    }
+}
+
+.zpl_mdl {
+    z-index: 104;
+    height: calc(100% - 28px) !important;
+}
+
+.zpl_mdl.zpl_mfull {
+    height: auto !important;
+    bottom: 28px;
+}
+
+// To avoid developer css code
+.zpl_iwrpr {
+    .dvlist-action {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#page-wrapper{
+    .zpl_outer{
+        top: 45px;
+        left: 70px;
+    }
+}

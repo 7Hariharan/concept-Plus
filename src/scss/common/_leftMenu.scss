@@ -1,0 +1,257 @@
+.zpl_lmnu {
+    --leftbarclr:var(--navclr);
+    width: $lpane;
+    @include position(absolute, $navbar, auto, 0, 0);
+    box-shadow: 1px 0 0 0 #eee;
+    background-color: var(--leftbarclr);
+    transition: ease 0.3s;
+}
+
+.zpl_lmnulst,
+.zpl_lbtm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    @include position(absolute, 0, 0, 0, 0);
+    >div,
+    ~div {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+        width: 100%;
+        height: 60px;
+        // &:hover {
+        //     // background-color:#2A3058;
+        //     i {
+        //         color: var(--actioncolor);
+        //         // background: #112263;
+        //     }
+        // }
+        i {
+            border-radius: 12px;
+            transition: all cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s;
+            border: 0;
+            height: 30px;
+            width: 44px;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            font-size: 18px;
+            text-decoration: none;
+            // margin-bottom: 5px;
+            font-smoothing: antialiased;
+            // background-color: rgba(233, 234, 239, 0.07);
+            color: #d2d3d9;
+        }
+        span {
+            color: #D2D3D9;
+            font-weight: var(--fontRegular);
+            font-size: 10px;
+            // margin-bottom: 10px;
+            line-height: 12px;
+            // text-transform: uppercase;
+        }
+        &.zpl_ladd {
+            position: relative;
+            margin-top: 10px;
+            // padding-top: 15px;
+            &:before {
+                content: '';
+                background-color: var(--navclrbdr);
+                width: 75%;
+                height: 1px;
+                // @include position(absolute, -7px, 0, null, 0);
+                @include position(absolute, -5px, 0, auto, 0);
+                margin: auto;
+            }
+            // i.IC_add {
+            //     color: var(--txtclrw);
+            //     background: transparent linear-gradient(136deg, #50BCFF 0%, #31B0FF 36%, #21BE75 100%) 0% 0% no-repeat;
+            //     // transform: matrix(0.72, 0.69, -0.69, 0.72, 0, 0);
+            //     margin-top: 30px;
+            //     &:after {
+            //         content: '';
+            //         height: 1px;
+            //         width: 70%;
+            //         background-color: var(--txt6clr);
+            //         display: block;
+            //         @include position(absolute, null, 0, 170%, 0);
+            //         margin: auto;
+            //     }
+            // }
+        }
+        &.zpl_act {
+            // background-color: var(--leftbarclr);
+            // background-color: #2A3058;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: var(--actioncolor);
+                // width: 100%;
+                // border-radius: 12px;
+                left: 0px;
+                top:11px;
+                width: 3px;
+                height: 25px;
+            }
+            i {
+                color: var(--actioncolor);
+            }
+            span {
+                color: var(--actioncolor);
+                font-weight: var(--fontSemibold);
+            }
+            &:hover{
+                background-color:var(--leftbarclr);
+                i{
+                    color: var(--actioncolor);
+                }
+            }
+        }
+    }
+}
+
+.zpl_lmnulst,
+.zpl_lbtm{
+    div{
+        &:hover{
+            background-color:#2A3058;
+            i{
+
+                color: var(--white);
+            }
+        }
+    }
+}
+
+i {
+    &.IC_profile {
+        &:before {
+            content: '\ecf5';
+            font-family: 'zpclr-font';
+        }
+    }
+    &.IC_org {
+        &:before {
+            content: '\eceb';
+            font-family: 'zpclr-font';
+        }
+    }
+    &.IC_team {
+        &:before {
+            content: '\eced';
+            font-family: 'zpclr-font';
+        }
+    }
+    &.IC_reports {
+        &:before {
+            content: '\ecec';
+            font-family: 'zpclr-font';
+        }
+    }
+    &.IC_add {
+        &:before {
+            content: '\e98f';
+            font-family: 'zpclr-font';
+        }
+    }
+}
+
+.logo_l {
+    background: url(../../images/People-logo.png) no-repeat;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: -3px;
+    transform: scale(0.6);
+    left: 5px;
+}
+
+.zpl_lbtm {
+    position: inherit;
+    top: auto;
+    bottom: 50px;
+    height: inherit !important;
+}
+
+.zpl_mnicn {
+    @include position(absolute, auto, 0, 10px, 0);
+    flex-direction: row !important;
+    height: 27px !important;
+    cursor: pointer;
+    &:hover {
+        background-color: transparent !important;
+        span {
+            // background-color: var(--switchgrnclr);
+        }
+    }
+    span {
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 2px;
+        background-color: var(--thmtxt);
+        border-radius: 4px;
+        transition: all 0.25s cubic-bezier(0, 0.58, 0.38, 1.49);
+        &:nth-child(1) {
+            top: 4px;
+        }
+        &:nth-child(2) {
+            top: 10px;
+            transform: translateY(-20%);
+            left: 23px;
+            width: 22px;
+        }
+        &:nth-child(3) {
+            bottom: 10px;
+        }
+    }
+    &:before {
+        content: '';
+        background-color: var(--navclrbdr);
+        width: 75%;
+        height: 1px;
+        @include position(absolute, -10px, 0, auto, 0);
+        margin: auto;
+    }
+}
+
+// .btm_rpts {
+//     @include position(absolute !important, null, null, 15px);
+// }
+.zpl_lmin {
+    --lpane: 50px;
+    .zpl_lmnu {
+        .zpl_lmnulst,
+        .zpl_lbtm {
+            >div {
+                height: $lpane;
+                span {
+                    display: none;
+                }
+                &.zpl_ladd {
+                    &:before {
+                        // top: 2px;
+                        top: -5px;
+                    }
+                }
+            }
+        }
+    }
+    .zpl_mnicn {
+        span {
+            // background-color: var(--switchgrnclr);
+            &:nth-child(2) {
+                left: 17px;
+            }
+        }
+    }
+}

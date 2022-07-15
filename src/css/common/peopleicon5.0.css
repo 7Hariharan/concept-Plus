@@ -1,0 +1,1041 @@
+@font-face {
+    font-family: 'Peopleicon_5';
+    src: url('../fonts/Peopleicon_5.eot?r35oz7');
+    src: url('../fonts/Peopleicon_5.eot?r35oz7#iefix') format('embedded-opentype'), url('../fonts/Peopleicon_5.ttf?r35oz7') format('truetype'), url('../fonts/Peopleicon_5.woff?r35oz7') format('woff'), url('../fonts/Peopleicon_5.svg?r35oz7#Peopleicon_5') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.PI_sort::before,
+.PI_sort::after,
+.PI_note:before,
+.PI_frm_bldgrp:before,
+.PI_frm_cntry:before,
+.PI_frm_curncy:before,
+.PI_frm_datime:before,
+.PI_frm_dcml:before,
+.PI_frm_decsn:before,
+.PI_frm_drpdwn:before,
+.PI_frm_mail:before,
+.PI_frm_upld:before,
+.PI_frm_frmla:before,
+.PI_frm_gndr:before,
+.PI_frm_img:before,
+.PI_frm_lkup:before,
+.PI_frm_multsel:before,
+.PI_frm_multln:before,
+.PI_frm_num:before,
+.PI_frm_phone:before,
+.PI_frm_radio:before,
+.PI_frm_sngln:before,
+.PI_sort:before,
+.PI_tick2_fil:before,
+.PI_award:before,
+.PI_bnsunit:before,
+.PI_compname .path1:before,
+.PI_compname .path2:before,
+.PI_compname .path3:before,
+.PI_compname .path4:before,
+.PI_compname .path5:before,
+.PI_compnsn:before,
+.PI_dept:before,
+.PI_designation:before,
+.PI_division:before,
+.PI_location:before,
+.PI_promo:before,
+.PI_workaniv:before,
+.PI_group:before,
+.PI_perm_sub:before,
+.PI_user:before,
+.PI_perm_no:before,
+.PI_perm_star:before,
+.PI_addlist:before,
+.PI_alert:before,
+.PI_aplcablity:before,
+.PI_app:before,
+.PI_alft:before,
+.PI_atop:before,
+.PI_argt:before,
+.PI_adwn:before,
+.PI_minarw:before,
+.PI_dbl_abtm:before,
+.PI_attach:before,
+.PI_back:before,
+.PI_bckspc:before,
+.PI_book:before,
+.PI_calendar:before,
+.PI_cam:before,
+.PI_minus2:before,
+.PI_tick2:before,
+.PI_plus2:before,
+.PI_clone:before,
+.PI_cls:before,
+.PI_cls2:before,
+.PI_cloud:before,
+.PI_cloudwn:before,
+.PI_cloudup:before,
+.PI_comment:before,
+.PI_cpy:before,
+.PI_calendar2:before,
+.PI_delete:before,
+.PI_desktop:before,
+.PI_downld:before,
+.PI_drag:before,
+.PI_drag3:before,
+.PI_drag2:before,
+.PI_edt:before,
+.PI_exprt:before,
+.PI_eyecls:before,
+.PI_fltr:before,
+.PI_folder:before,
+.PI_gglsync .path1:before,
+.PI_gglsync .path2:before,
+.PI_gglsync .path3:before,
+.PI_gglsync .path4:before,
+.PI_grid:before,
+.PI_fav:before,
+.PI_help2:before,
+.PI_imprt:before,
+.PI_info:before,
+.PI_invtusr:before,
+.PI_like:before,
+.PI_link:before,
+.PI_list:before,
+.PI_lock:before,
+.PI_mgnfr:before,
+.PI_mail:before,
+.PI_maxmz:before,
+.PI_minmz:before,
+.PI_minus:before,
+.PI_more:before,
+.PI_move:before,
+.PI_msofc:before,
+.PI_pending:before,
+.PI_pending3:before,
+.PI_pending2:before,
+.PI_pin:before,
+.PI_plus:before,
+.PI_eye:before,
+.PI_print:before,
+.PI_redirect:before,
+.PI_refresh:before,
+.PI_reset:before,
+.PI_reload:before,
+.PI_lens:before,
+.PI_Star_Str:before,
+.PI_tag:before,
+.PI_tick:before,
+.PI_tool2:before,
+.PI_unlike:before,
+.PI_unlock:before,
+.PI_usr:before,
+.PI_warning:before,
+.PI_workdrive:before,
+.PI_zmail .path1:before,
+.PI_zmail .path2:before,
+.PI_ado:before,
+.PI_code:before,
+.PI_img:before,
+.PI_none:before,
+.PI_pdf:before,
+.PI_ppt:before,
+.PI_sheet:before,
+.PI_txt:before,
+.PI_vdo:before,
+.PI_zip:before,
+.PI_doc:before,
+.PI_reward:before,
+.PI_test:before,
+.PI_mngap:before,
+.PI_draft:before,
+.PI_timer:before,
+.PI_audit:before,
+.PI_scale:before,
+.PI_mtf:before,
+.PI_desc:before,
+.PI_hs:before,
+.PI_ddwn:before,
+.PI_sc:before,
+.PI_mc:before,
+.PI_tof:before,
+.PI_fib:before,
+.PI_response:before,
+.PI_facility:before,
+.PI_btrip:before,
+.PI_voclv:before,
+.PI_tmtrip:before,
+.PI_sicklv:before,
+.PI_prvlv:before,
+.PI_prvlv1:before,
+.PI_patlv:before,
+.PI_matlv:before,
+.PI_optlv:before,
+.PI_onduty:before,
+.PI_matlv1:before,
+.PI_mat2:before,
+.PI_emglv:before,
+.PI_emglv1:before,
+.PI_compoff:before,
+.PI_compoff1:before,
+.PI_caslv:before,
+.PI_btrip1:before,
+.PI_tmtrip1:before,
+.PI_tmtrip2 .path1:before,
+.PI_tmtrip2 .path2:before,
+.PI_wedlv:before,
+.PI_tmtrip3:before,
+.PI_sicklv1:before,
+.PI_caslv1:before,
+.PI_erndlv:before,
+.PI_erndlv1:before,
+.PI_ovrtmoff:before,
+.PI_emrg:before,
+.PI_lunch:before,
+.PI_play:before,
+.PI_holiday:before,
+.PI_job:before,
+.PI_play1:before,
+.PI_brk:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Peopleicon_5' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.PI_sort::before {
+    content: "";
+}
+
+.PI_sort::after {
+    content: "";
+    margin-left: -1em;
+}
+
+.PI_note:before {
+    content: "\e948";
+}
+
+.PI_frm_bldgrp:before {
+    content: "\e9b2";
+}
+
+.PI_frm_cntry:before {
+    content: "\e9b3";
+}
+
+.PI_frm_curncy:before {
+    content: "\e9b4";
+}
+
+.PI_frm_datime:before {
+    content: "\e9b5";
+}
+
+.PI_frm_dcml:before {
+    content: "\e9b6";
+}
+
+.PI_frm_decsn:before {
+    content: "\e9b7";
+}
+
+.PI_frm_drpdwn:before {
+    content: "\e9b8";
+}
+
+.PI_frm_mail:before {
+    content: "\e9b9";
+}
+
+.PI_frm_upld:before {
+    content: "\e9ba";
+}
+
+.PI_frm_frmla:before {
+    content: "\e9bb";
+}
+
+.PI_frm_gndr:before {
+    content: "\e9bc";
+}
+
+.PI_frm_img:before {
+    content: "\e9bd";
+}
+
+.PI_frm_lkup:before {
+    content: "\e9be";
+}
+
+.PI_frm_multsel:before {
+    content: "\e9bf";
+}
+
+.PI_frm_multln:before {
+    content: "\e9c0";
+}
+
+.PI_frm_num:before {
+    content: "\e9c1";
+}
+
+.PI_frm_phone:before {
+    content: "\e9c2";
+}
+
+.PI_frm_radio:before {
+    content: "\e9c3";
+}
+
+.PI_frm_sngln:before {
+    content: "\e9c4";
+}
+
+.PI_tick2_fil:before {
+    content: "\e9b1";
+}
+
+.PI_award:before {
+    content: "\e9a3";
+}
+
+.PI_bnsunit:before {
+    content: "\e9a4";
+}
+
+.PI_compname .path1:before {
+    content: "\e9a5";
+    color: rgb(255, 255, 255);
+}
+
+.PI_compname .path2:before {
+    content: "\e9a6";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_compname .path3:before {
+    content: "\e9a7";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_compname .path4:before {
+    content: "\e9a8";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_compname .path5:before {
+    content: "\e9a9";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_compnsn:before {
+    content: "\e9aa";
+}
+
+.PI_dept:before {
+    content: "\e9ab";
+}
+
+.PI_designation:before {
+    content: "\e9ac";
+}
+
+.PI_division:before {
+    content: "\e9ad";
+}
+
+.PI_location:before {
+    content: "\e9ae";
+}
+
+.PI_promo:before {
+    content: "\e9af";
+}
+
+.PI_workaniv:before {
+    content: "\e9b0";
+}
+
+.PI_group:before {
+    content: "\e93a";
+}
+
+.PI_perm_sub:before {
+    content: "\e947";
+}
+
+.PI_user:before {
+    content: "\e99e";
+}
+
+.PI_perm_no:before {
+    content: "\e99f";
+}
+
+.PI_perm_star:before {
+    content: "\e9a0";
+}
+
+.PI_addlist:before {
+    content: "\e900";
+}
+
+.PI_alert:before {
+    content: "\e901";
+}
+
+.PI_aplcablity:before {
+    content: "\e902";
+}
+
+.PI_app:before {
+    content: "\e903";
+}
+
+.PI_alft:before {
+    content: "\e904";
+}
+
+.PI_atop:before {
+    content: "\e904";
+    transform: rotate(90deg);
+}
+
+.PI_argt:before {
+    content: "\e904";
+    transform: rotate(180deg);
+}
+
+.PI_abtm:before {
+    content: "\e904";
+    transform: rotate(-90deg);
+}
+
+.PI_minarw:before {
+    content: "\e905";
+}
+
+.PI_dbl_abtm:before {
+    content: "\e906";
+}
+
+.PI_attach:before {
+    content: "\e907";
+}
+
+.PI_back:before {
+    content: "\e908";
+}
+
+.PI_bckspc:before {
+    content: "\e909";
+}
+
+.PI_book:before {
+    content: "\e90a";
+}
+
+.PI_calendar:before {
+    content: "\e90b";
+}
+
+.PI_cam:before {
+    content: "\e90c";
+}
+
+.PI_minus2:before {
+    content: "\e90d";
+}
+
+.PI_plus2:before {
+    content: "\e90e";
+}
+
+.PI_tick2:before {
+    content: "\e90f";
+}
+
+.PI_clone:before {
+    content: "\e910";
+}
+
+.PI_cls:before {
+    content: "\e911";
+}
+
+.PI_cls2:before {
+    content: "\e912";
+}
+
+.PI_cloud:before {
+    content: "\e913";
+}
+
+.PI_cloudwn:before {
+    content: "\e914";
+}
+
+.PI_cloudup:before {
+    content: "\e915";
+}
+
+.PI_comment:before {
+    content: "\e916";
+}
+
+.PI_cpy:before {
+    content: "\e917";
+}
+
+.PI_calendar2:before {
+    content: "\e918";
+}
+
+.PI_delete:before {
+    content: "\e919";
+}
+
+.PI_desktop:before {
+    content: "\e91a";
+}
+
+.PI_downld:before {
+    content: "\e91b";
+}
+
+.PI_drag:before {
+    content: "\e91c";
+}
+
+.PI_drag3:before {
+    content: "\e91d";
+}
+
+.PI_drag2:before {
+    content: "\e91e";
+}
+
+.PI_edt:before {
+    content: "\e91f";
+}
+
+.PI_exprt:before {
+    content: "\e920";
+}
+
+.PI_eyecls:before {
+    content: "\e921";
+}
+
+.PI_fltr:before {
+    content: "\e922";
+}
+
+.PI_folder:before {
+    content: "\e923";
+}
+
+.PI_gglsync .path1:before {
+    content: "\e924";
+    color: rgb(66, 133, 244);
+}
+
+.PI_gglsync .path2:before {
+    content: "\e925";
+    margin-left: -1em;
+    color: rgb(52, 168, 83);
+}
+
+.PI_gglsync .path3:before {
+    content: "\e926";
+    margin-left: -1em;
+    color: rgb(251, 188, 5);
+}
+
+.PI_gglsync .path4:before {
+    content: "\e927";
+    margin-left: -1em;
+    color: rgb(234, 67, 53);
+}
+
+.PI_grid:before {
+    content: "\e928";
+}
+
+.PI_fav:before {
+    content: "\e929";
+}
+
+.PI_help2:before {
+    content: "\e92a";
+}
+
+.PI_imprt:before {
+    content: "\e92b";
+}
+
+.PI_info:before {
+    content: "\e92c";
+}
+
+.PI_invtusr:before {
+    content: "\e92d";
+}
+
+.PI_like:before {
+    content: "\e92e";
+}
+
+.PI_link:before {
+    content: "\e92f";
+}
+
+.PI_list:before {
+    content: "\e930";
+}
+
+.PI_lock:before {
+    content: "\e931";
+}
+
+.PI_mgnfr:before {
+    content: "\e932";
+}
+
+.PI_mail:before {
+    content: "\e933";
+}
+
+.PI_maxmz:before {
+    content: "\e934";
+}
+
+.PI_minmz:before {
+    content: "\e935";
+}
+
+.PI_minus:before {
+    content: "\e936";
+}
+
+.PI_more:before {
+    content: "\e937";
+}
+
+.PI_move:before {
+    content: "\e938";
+}
+
+.PI_msofc:before {
+    content: "\e939";
+    color: #dc3e15;
+}
+
+.PI_pending:before {
+    content: "\e93b";
+}
+
+.PI_pending3:before {
+    content: "\e93c";
+}
+
+.PI_pending2:before {
+    content: "\e93d";
+}
+
+.PI_pin:before {
+    content: "\e93e";
+}
+
+.PI_plus:before {
+    content: "\e93f";
+}
+
+.PI_eye:before {
+    content: "\e940";
+}
+
+.PI_print:before {
+    content: "\e941";
+}
+
+.PI_redirect:before {
+    content: "\e942";
+}
+
+.PI_refresh:before {
+    content: "\e943";
+}
+
+.PI_reset:before {
+    content: "\e944";
+}
+
+.PI_reload:before {
+    content: "\e945";
+}
+
+.PI_lens:before {
+    content: "\e946";
+}
+
+.PI_Star_Str:before {
+    content: "\e949";
+}
+
+.PI_tag:before {
+    content: "\e94a";
+}
+
+.PI_tick:before {
+    content: "\e94b";
+}
+
+.PI_tool2:before {
+    content: "\e94c";
+}
+
+.PI_unlike:before {
+    content: "\e94d";
+}
+
+.PI_unlock:before {
+    content: "\e94e";
+}
+
+.PI_usr:before {
+    content: "\e94f";
+}
+
+.PI_warning:before {
+    content: "\e950";
+}
+
+.PI_workdrive:before {
+    content: "\e951";
+    color: #226eb3;
+}
+
+.PI_zmail .path1:before {
+    content: "\e952";
+    color: rgb(249, 178, 29);
+    opacity: 0.9;
+}
+
+.PI_zmail .path2:before {
+    content: "\e953";
+    margin-left: -1em;
+    color: rgb(34, 109, 180);
+    opacity: 0.9;
+}
+
+.PI_ado:before {
+    content: "\e954";
+}
+
+.PI_code:before {
+    content: "\e955";
+}
+
+.PI_img:before {
+    content: "\e956";
+}
+
+.PI_none:before {
+    content: "\e957";
+}
+
+.PI_pdf:before {
+    content: "\e958";
+}
+
+.PI_ppt:before {
+    content: "\e959";
+}
+
+.PI_sheet:before {
+    content: "\e95a";
+}
+
+.PI_txt:before {
+    content: "\e95b";
+}
+
+.PI_vdo:before {
+    content: "\e95c";
+}
+
+.PI_zip:before {
+    content: "\e95d";
+}
+
+.PI_doc:before {
+    content: "\e95e";
+}
+
+.PI_reward:before {
+    content: "\e95f";
+}
+
+.PI_test:before {
+    content: "\e960";
+}
+
+.PI_mngap:before {
+    content: "\e961";
+}
+
+.PI_draft:before {
+    content: "\e962";
+}
+
+.PI_timer:before {
+    content: "\e963";
+}
+
+.PI_audit:before {
+    content: "\e964";
+}
+
+.PI_scale:before {
+    content: "\e965";
+}
+
+.PI_mtf:before {
+    content: "\e966";
+}
+
+.PI_desc:before {
+    content: "\e967";
+}
+
+.PI_hs:before {
+    content: "\e968";
+}
+
+.PI_ddwn:before {
+    content: "\e969";
+}
+
+.PI_sc:before {
+    content: "\e96a";
+}
+
+.PI_mc:before {
+    content: "\e96b";
+}
+
+.PI_tof:before {
+    content: "\e96c";
+}
+
+.PI_fib:before {
+    content: "\e96d";
+}
+
+.PI_response:before {
+    content: "\e96e";
+}
+
+.PI_facility:before {
+    content: "\e96f";
+}
+
+.PI_btrip:before {
+    content: "\e970";
+}
+
+.PI_voclv:before {
+    content: "\e971";
+}
+
+.PI_tmtrip:before {
+    content: "\e972";
+}
+
+.PI_sicklv:before {
+    content: "\e973";
+}
+
+.PI_prvlv:before {
+    content: "\e974";
+}
+
+.PI_prvlv1:before {
+    content: "\e975";
+}
+
+.PI_patlv:before {
+    content: "\e976";
+}
+
+.PI_matlv:before {
+    content: "\e977";
+}
+
+.PI_optlv:before {
+    content: "\e978";
+}
+
+.PI_onduty:before {
+    content: "\e979";
+}
+
+.PI_matlv1:before {
+    content: "\e97a";
+}
+
+.PI_mat2:before {
+    content: "\e97b";
+}
+
+.PI_emglv:before {
+    content: "\e97c";
+}
+
+.PI_emglv1:before {
+    content: "\e97d";
+}
+
+.PI_compoff:before {
+    content: "\e97e";
+}
+
+.PI_compoff1:before {
+    content: "\e97f";
+}
+
+.PI_caslv:before {
+    content: "\e980";
+}
+
+.PI_btrip1:before {
+    content: "\e981";
+}
+
+.PI_tmtrip1:before {
+    content: "\e982";
+}
+
+.PI_tmtrip2 .path1:before {
+    content: "\e983";
+    color: rgb(29, 29, 27);
+}
+
+.PI_tmtrip2 .path2:before {
+    content: "\e99d";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_wedlv:before {
+    content: "\e984";
+}
+
+.PI_tmtrip3:before {
+    content: "\e985";
+}
+
+.PI_sicklv1:before {
+    content: "\e986";
+}
+
+.PI_caslv1:before {
+    content: "\e987";
+}
+
+.PI_erndlv:before {
+    content: "\e988";
+}
+
+.PI_erndlv1:before {
+    content: "\e989";
+}
+
+.PI_ovrtmoff:before {
+    content: "\e98a";
+}
+
+.PI_emrg:before {
+    content: "\e98b";
+}
+
+.PI_lunch:before {
+    content: "\e98c";
+}
+
+.PI_play:before {
+    content: "\e98d";
+}
+
+.PI_holiday:before {
+    content: "\e98e";
+}
+
+.PI_job:before {
+    content: "\e98f";
+}
+
+.PI_play1:before {
+    content: "\e990";
+}
+
+.PI_brk:before {
+    content: "\e991";
+}
+
+.PI_arrow-d-s:before {
+    content: "\e992";
+}
+
+.PI_arrow-d:before {
+    content: "\e993";
+}
+
+.PI_arrow-r-s:before {
+    content: "\e994";
+}
+
+.PI_askus:before {
+    content: "\e995";
+}
+
+.PI_assign:before {
+    content: "\e996";
+}
+
+.PI_att-2:before {
+    content: "\e997";
+}
+
+.PI_attach1:before {
+    content: "\e998";
+}
+
+.PI_attandance:before {
+    content: "\e999";
+}
+
+.PI_attcloud:before {
+    content: "\e99a";
+}
+
+.PI_auto:before {
+    content: "\e99b";
+}
+
+.PI_award1:before {
+    content: "\e99c";
+}

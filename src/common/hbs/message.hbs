@@ -1,0 +1,196 @@
+<div class="zpl_secn zpl_mailtmp">
+    <div>
+        <label>From</label>
+    </div>
+    <div>
+        <div class="zpl_idiv">
+            <select class="select-js" data-width="250" value="Select">
+                <option id="0">Person performing this action</option>
+                <option id="1">Default From</option>
+            </select>
+            <!-- <i class="IC-Pls"></i> -->
+            <div class="zpl_cc">
+                <span>Add:</span>
+                <a href="" class="zpl_lnk" onclick="cc(this)">CC</a>
+                <a href="" class="zpl_lnk" onclick="bcc(this)">BCC</a>
+                <a href="" class="zpl_lnk" onclick="bcc(this)">Reply to</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zpl_secn zpl_mailtmp">
+    <div>
+        <label>To</label>
+    </div>
+    <div>
+        <div class="zpl_inpgrp">
+            <div class="zpl_frmctrl">
+
+            </div>
+            <a class="grp_add">
+                <i class="IC-addlist"></i>
+            </a>
+        </div>
+        <!-- <div class="ztextbox--error__label"></div> -->
+    </div>
+    <!-- <div>
+                                </div> -->
+</div>
+<div class="zpl_secn zpl_mailtmp DNI" action="cc">
+    <div>
+        <label>CC</label>
+    </div>
+    <div>
+        <div class="zpl_inpgrp">
+            <div class="zpl_frmctrl">
+
+            </div>
+            <a class="grp_add">
+                <i class="IC-addlist"></i>
+            </a>
+        </div>
+        <!-- <div class="ztextbox--error__label"></div> -->
+    </div>
+</div>
+<div class="zpl_secn zpl_mailtmp DNI" action="bcc">
+    <div>
+        <label>BCC</label>
+    </div>
+    <div>
+        <div class="zpl_inpgrp">
+            <div class="zpl_frmctrl">
+
+            </div>
+            <a class="grp_add">
+                <i class="IC-addlist"></i>
+            </a>
+        </div>
+        <!-- <div class="ztextbox--error__label"></div> -->
+    </div>
+</div>
+<div class="zpl_secn zpl_mailtmp">
+    <div>
+        <label>Subject</label>
+    </div>
+    <div>
+        <div class="zpl_inpgrp">
+            <input type="text" placeholder="" class="ztextbox">
+            <a class="grp_add">
+                <i class="IC-addlist"></i>
+            </a>
+        </div>
+        <!-- <div class="ztextbox--error__label"></div> -->
+    </div>
+</div>
+<div class="zpl_secn zpl_mailtmp">
+    <div>
+        <label>Message</label>
+    </div>
+    <div>
+        <div class="zpl_idiv">
+            <select class="select-js" data-width="250" value="Select">
+                <option id="0">Create new template</option>
+                <option id="1">Welcome new employee</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="zpl_secn">
+    <div>
+        {{!-- <img src="../images/settings/editor.png"> --}}
+        <div class="zpl_msgedtr">
+            <div class="zpl_msghd">
+                <div class="zpl_secn zpl_twoclum">
+                    <div>
+                        <label>Available Merge Fields</label>
+                        <select value="EH" class="zselectbox select-js has-focus has-mfocus">
+                            <option id="EH">System Fields</option>
+                            <!-- <option id="YE">Open</option> -->
+                            <!-- <option id="ZM">Close</option> -->
+                        </select>
+                    </div>
+                    <div>
+                        <label>Select Field</label>
+                        <select value="EH" class="zselectbox select-js has-focus has-mfocus">
+                            <option id="EH">Current Month</option>
+                            <!-- <option id="YE">Open</option> -->
+                            <!-- <option id="ZM">Close</option> -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Field Value</label><input readonly="" class="ztextbox" type="text">
+                    </div>
+                    <div>
+                        <button id="addPolicy1" type="button" class="zlabel zlabel--blue zlabel--medium">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="zpl_msgtxt">
+                <img src="../../images/settings/onlyeditor.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="zpl_secn">
+    <div>
+        <label>Attachment</label>
+    </div>
+    <div>
+        <div class="zpl_upld">
+            <!-- File upload -->
+            <div class="zpl_fldrp">
+                <h5><img src="../../images/fileupload.png" alt="">Drag and drop files here, or Upload from <a
+                        class="zpl_lnk"><i class="PI_case"></i>Desktop</a> / <a class="zpl_lnk"><i
+                            class="PI_cloud"></i>Workdrive</a> / <a class="zpl_lnk"><i class="PI_cloud"></i>Cloud</a>
+                </h5>
+            </div>
+            {{!-- <p>
+                <span>Files supported: PDF, XLS, Image, MP4, MP3</span>
+                <span>Maximum size: 5MB</span>
+            </p> --}}
+        </div>
+    </div>
+</div>
+<div class="zpl_secn">
+    {{!-- <div>
+        <h5>Attachment Files</h5>
+    </div> --}}
+    <div>
+        <div class="zpl_atchd">
+            <div>
+                <div class="zpl_atchimg">
+                    <i class="IC-Apdf zpl_fl_typ"></i>
+                </div>
+                <div class="zpl_atchdtl">
+                    <h4>Attachment 1</h4>
+                    <p><span>10 MB</span></p>
+                </div>
+                <div class="zpl_atchicn">
+                    <i class="IC-delete-1px"></i>
+                </div>
+                <div class="zpl_prgbr">
+                    <div>
+                        <div style="width:38%"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div>
+                <div class="zpl_atchimg">
+                    <i class="IC-Apdf zpl_fl_typ"></i>
+                </div>
+                <div class="zpl_atchdtl">
+                    <h4>Attachment 1</h4>
+                    <p><span>10 MB</span></p>
+                </div>
+                <div class="zpl_atchicn">
+                    <i class="IC-delete-1px"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

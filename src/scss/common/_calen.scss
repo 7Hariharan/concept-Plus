@@ -1,0 +1,255 @@
+.zpl_calen {
+    width: 100%;
+    table-layout: fixed;
+    height: 100%;
+    .weknd {
+        background-color: #f8f8f8;
+        * {
+            opacity: 0.7;
+        }
+    }
+    .wktme {
+        border: none;
+        color: var(--txt6clr);
+        text-align: right;
+        p {
+            text-transform: uppercase;
+            padding: 8px;
+            font-size: 13px;
+        }
+    }
+    .absnt {
+        position: relative;
+        // background-color: #ffeeed;
+        background: repeating-linear-gradient(140deg, #FCF0EE 0, #FCF0EE 1px, #FCF5F5 0em, #FCF5F5 calc(0.7em + -1px), #FCF5F5 9px) !important;
+        b {
+            text-align: center;
+            display: block;
+            color: var(--primaryredclr);
+        }
+    }
+    thead {
+        tr {
+            th {
+                padding: 14px;
+                border: 1px solid #e0e5ef;
+                >div {
+                    float: right;
+                    text-align: center;
+                    >em {
+                        font-weight: var(--fontMedium);
+                        text-transform: uppercase;
+                        font-size: 13px;
+                    }
+                    b {
+                        font-size: 22px;
+                        margin-top: 4px;
+                        height: 36px;
+                        width: 36px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        font-weight: var(--fontRegular);
+                    }
+                }
+                >font {
+                    h3 {
+                        color: var(--textbluclr);
+                        font-size: 26px;
+                        font-weight: var(--fontRegular);
+                    }
+                    p {
+                        margin-top: 12px;
+                        font-weight: var(--fontMedium);
+                        color: var(--txt2clr);
+                        font-size: 16px;
+                    }
+                }
+                &.actv {
+                    >div {
+                        b {
+                            color: var(--textbluclr);
+                            background-color: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                border: 1px solid #e0e5ef;
+                min-height: 100%;
+                padding: 8px;
+                vertical-align: top;
+                position: relative;
+                // background-color: red;
+                &.actv {
+                    background: #d9ecff;
+                    >em {
+                        color: var(--textbluclr);
+                        font-weight: var(--fontRegular);
+                    }
+                }
+                >em {
+                    font-weight: var(--fontLight);
+                    color: var(--txt4clr);
+                    font-size: 17px;
+                    letter-spacing: 1px;
+                    margin: 0 auto 10px;
+                    margin-right: 0;
+                    height: 34px;
+                    width: 34px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    // background: red;
+                }
+                &.othrdt {
+                    * {
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+    // Weekview
+    &.weekvw {
+        .actv {
+            >div {
+                em {
+                    color: var(--textbluclr);
+                }
+            }
+        }
+        .wkstat {
+            td {
+                height: 34px;
+            }
+        }
+        thead {
+            tr {
+                th {
+                    padding: 20px;
+                    em {
+                        font-weight: var(--fontRegular);
+                    }
+                }
+            }
+        }
+    }
+    // Dayview
+    &.dayvw {
+        thead {
+            tr {
+                th {
+                    border: none;
+                    padding: 40px;
+                    &:first-child {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+    &.weekvw,
+    &.dayvw {
+        height: unset;
+        tbody {
+            tr {
+                td {
+                    height: 80px;
+                }
+            }
+        }
+    }
+    // Calendar list
+    .zpl_calstcnt {
+        li {
+            margin-bottom: 7px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .zpl_calst {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px 10px 24px;
+            // margin-top: 7px;
+            background-color: var(--primarygryclr);
+            border-radius: 7px;
+            position: relative;
+            box-shadow: 0px 5px 2px -4px rgba(0, 0, 0, 0.09);
+            &::before {
+                content: "";
+                top: 10px;
+                bottom: 10px;
+                left: 10px;
+                width: 3px;
+                border-radius: 50px;
+                background-color: rgba(0, 0, 0, 0.2);
+                position: absolute;
+            }
+            >div {
+                p,
+                b {
+                    font-size: 13px;
+                }
+                b {
+                    color: var(--txt2clr);
+                }
+                em {
+                    font-size: 12px;
+                }
+                >div {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 4px;
+                    margin-top: 12px;
+                    line-height: 15px;
+                    font-weight: var(--fontRegular);
+                    color: var(--txt4clr);
+                }
+            }
+            &.calrd {
+                background-color: #ffeeed;
+                &::before {
+                    background-color: var(--primaryredclr);
+                }
+            }
+            &.calgrn {
+                background-color: #eafff3;
+                &::before {
+                    background-color: var(--primarygrnclr);
+                }
+            }
+            &.calblu {
+                background-color: #ecf6ff;
+                &::before {
+                    background-color: var(--primarybluclr);
+                }
+            }
+            &.calyl {
+                background-color: #fff4eb;
+                &::before {
+                    background-color: var(--primaryylwclr);
+                }
+            }
+            &.calprpl {
+                background-color: #f0ebff;
+                &::before {
+                    background-color: #5f1acd;
+                }
+            }
+        }
+        .zpl_lnkbg {
+            float: right;
+            margin-right: 0px;
+            margin-top: 8px;
+            font-size: 12px;
+        }
+    }
+}

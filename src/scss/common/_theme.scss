@@ -1,0 +1,509 @@
+// .omu {
+//     --thmhdr: #0C143F;
+//     --thmscnclr: #2A3058;
+//     --thmtxt: #FFFFFF;
+//     --gryborderclr: #2A3058;
+// }
+// .fldrk {
+//     --txt2clr: #EFF1F6;
+//     --txt4clr: #EFF1F6;
+//     --txt6clr: #EFF1F6;
+//     --thmbg: #0C143F;
+//     --thmgryclr: #2A3058;
+//     --white: #0C143F;
+//     --siderbaractcolor: #172048;
+//     --bordercolor: #2A3058;
+//     --tablehover: #172048;
+//     --tablehead: #172048;
+//     --gryborderclr: #2A3058;
+// }
+:root {
+    --fromBorclr: var(--brdr_prm);
+}
+
+.omu {
+    --thmhdr: #202124;
+    --thmscnclr: #3a3b3c;
+    --thmtxt: #b0b4b8;
+    --gryborderclr: #5f6367;
+}
+
+.fldrk {
+    --txt2clr: #ffffff;
+    --txt4clr: #b0b4b8;
+    --txt6clr: #b9b9ba;
+    --txt8clr: #888888;
+    --thmbg: #2a2b2e;
+    --thmgryclr: #202124;
+    --thmbluclr: #0088FF;
+    // --white: #0C143F;
+    --txtclrw: #ffffff;
+    --siderbaractcolor: #3a3b3c;
+    --bordercolor: #2d2d2d;
+    --tablehover: #3a3b3c;
+    --tablehead: #172048;
+    --gryborderclr: #5f6367;
+    --dbshdw: 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.20);
+    --cbshdw: 0 2px 5px 0 rgba(0, 0, 0, 0.30), 0 1px 3px 0 rgba(0, 0, 0, 0.50);
+    --cbshdw-hvr: 1px 8px 14px 0px rgba(0, 0, 0, 0.30), 1px 5px 6px 7px rgba(0, 0, 0, 0.10);
+    --grybg: var(--thmgryclr);
+    --dgrybg: var(--thmbg);
+    /* DARK MODE CUSTOM STYLES */
+    // COMMON STYLES STARTS
+    // SEARCH STYLE
+    // i {
+    //     &:before {
+    //         color: var(--txt2clr) !important;
+    //     }
+    //     > i:before {
+    //         color: var(--txt2clr) !important;
+    //     }
+    // }
+    .zpl_glsrch>div {
+        background-color: var(--thmbg);
+    }
+    //LEFT MENU
+    .zpl_lmnu {
+        box-shadow: var(--dbshdw);
+        z-index: 1;
+    }
+    // TOP BAND
+    .zpl_Nav {
+        //box-shadow: var(--dbshdw);
+    }
+    .zpl_glsrch {
+        >div {
+            input {
+                color: var(--txtclrw);
+            }
+        }
+    }
+    .zpl_rProf .zpl_Nvpic img {
+        border: 2px solid var(--thmbg);
+    }
+    // ZOHO COMPONENTS
+    .zlabel.zlabel--outline {
+        background-color: #ffffff1a;
+        border: 1px solid transparent;
+        color: #e4e6eb;
+        &:hover {
+            background-color: #4e4f50;
+            border: 1px solid #4e4f50;
+        }
+    }
+    .ztextbox,
+    .ztextfilefield {
+        background-color: transparent;
+    }
+    .ztextbox,
+    .ztokenfield,
+    .zinputfield,
+    .zselectbox,
+    .zcolorselect.zselectbox {
+        background-color: var(--thmbg);
+        font-size: var(--fontSz14);
+        color: var(--txt2clr);
+        &::placeholder {
+            color: var(--txt6clr);
+        }
+    }
+    .zcombobox .zselectbox__icon,
+    .ztextbox,
+    .ztokenfield,
+    .zinputfield,
+    .zselectbox,
+    .zcolorselect.zselectbox {
+        border: 1px solid var(--gryborderclr);
+    }
+    .ztextbox:active,
+    .ztextbox.is-active,
+    .ztextbox:focus,
+    .ztextbox.is-focus,
+    .ztextfilefield:active,
+    .ztextfilefield.is-active,
+    .ztextfilefield:focus,
+    .ztextfilefield.is-focus,
+    .zselectbox.is-active {
+        border: 1px solid var(--textbluclr);
+    }
+    .zcombobox .zselectbox__icon,
+    .ztextbox,
+    .ztokenfield,
+    .zinputfield,
+    .zselectbox,
+    .zcolorselect.zselectbox {
+        // border: 1px solid var(--gryborderclr);
+    }
+    .zselectbox:hover,
+    .zselectbox__text,
+    .zselectbox:hover .zselectbox__text,
+    .zselectbox.is-active .zselectbox__text,
+    .zselectbox.has-kfocus .zselectbox__text {
+        color: var(--txt2clr);
+    }
+    .ztokenfield__token {
+        background-color: #ffffff1a;
+        border-color: #ffffff1a;
+        &:hover,
+        &.on-hover {
+            color: var(--txt2clr);
+        }
+    }
+    .zradiobutton .zradiobutton__label:before,
+    .zcheckbox .zcheckbox__label:before {
+        background-color: transparent;
+    }
+    // .zbutton:hover {
+    //     background: transparent;
+    // }
+    .ztokenfield__textbox {
+        background-color: var(--thmbg);
+        color: var(--txt2clr);
+    }
+    .zinputfield__textbox {
+        color: var(--txt2clr);
+    }
+    .zdropdownlist,
+    .zdropdownlist__item,
+    .zdropdownlist__search {
+        background-color: var(--thmscnclr);
+        border-color: var(--thmbg);
+    }
+    .zdropdownlist__text,
+    .zdropdownlist__item.on-hover .zdropdownlist__text,
+    .zdropdownlist__item.has-focus .zdropdownlist__text {
+        color: var(--txt2clr);
+    }
+    .zdropdownlist__body .zdropdownlist__item:hover,
+    .zdropdownlist__body .zdropdownlist__item.is-selected,
+    .zdropdownlist__item.is-selected .zdropdownlist__text {
+        background-color: var(--thmbg);
+        color: var(--txt2clr);
+    }
+    .zdropdownlist__searchfield:focus,
+    .zdropdownlist__searchfield.has-focus {
+        background-color: var(--thmbg);
+        border-color: var(--thmscnclr);
+        color: var(--txt2clr);
+    }
+    .chkdectxt .dectxt,
+    .radiodectxt .dectxt {
+        // font-weight: 300;
+        // color: var(--txt8clr);
+    }
+    .CR-drag {
+        color: var(--txt4clr);
+    }
+    .zpl_atchd>div {
+        box-shadow: var(--cbshdw);
+        &:hover {
+            box-shadow: var(--cbshdw-hvr);
+        }
+    }
+    // END OF COMMON STYLES
+    // CARD STYLES
+    .zpl_crd {
+        background-color: var(--thmbg);
+        .zpl_crdhdr {
+            border-bottom: 1px solid var(--thmgryclr);
+            h4 {
+                font-weight: var(--fontRegular);
+            }
+            &.brdr_tp {
+                border-top: 1px solid var(--thmgryclr);
+                border-bottom: 1px solid var(--thmbg);
+            }
+        }
+    }
+    .zpl_gbox {
+        background-color: var(--thmgryclr);
+    }
+    .setng .s_wrap .s_lst {
+        box-shadow: var(--cbshdw);
+        &:hover {
+            box-shadow: var(--cbshdw-hvr);
+        }
+    }
+    .zpl_comp .zpl_drop:hover {
+        background-color: var(--thmscnclr);
+    }
+
+    .zpl_cat > div {
+        background-color: var(--thmgryclr);
+        .zpl_actn span i {
+            background-color: var(--thmgryclr);
+        }
+        &:hover {
+            .zpl_actn span i {
+                background-color: var(--thmgryclr);
+            }
+        }
+    }
+    .zpl_icncnt {
+        i {
+            &.zpl_act {
+                background: var(--thmscnclr);
+                &:hover {
+                    background-color: var(--gryborderclr);
+                }
+            }
+        }
+    }
+    .zpl_usr_crd,
+    .zpl_cnt_mngr {
+        >div {
+            &:hover {
+                box-shadow: var(--cbshdw-hvr);
+            }
+        }
+    }
+    // INTEGRATION STYLES 
+    .zpl_apiSrch input {
+        color: var(--txt2clr);
+        background-color: transparent;
+    }
+    .zpl_apilstdv div ul li.chld1:hover,
+    .zpl_apilstdv div ul li.chld2:hover,
+    .zpl_apilstdv div ul li.chld3:hover {
+        background-color: var(--thmscnclr);
+    }
+    .zpl_apilstdv div:first-child {
+        border-color: var(--bordercolor);
+    }
+    // PEOPLE COMPONENTS STYLES
+    .zradiobutton .zradiobutton__label .zradiobutton__text,
+    .zcheckbox .zcheckbox__label,
+    .zpl_tgl {
+        // color: var(--txt2clr);
+        // color: var(--fromBorclr);
+    }
+    .zpl_secn p {
+        color: var(--txt8clr);
+    }
+    .zpl_tg {
+        color: var(--txt2clr);
+        background-color: var(--gryborderclr);
+        .IC-cls {
+            &:hover {
+                background-color: var(--thmgryclr);
+            }
+        }
+    }
+    .zpl_ibg {
+        color: var(--txt4clr);
+        &:hover {
+            color: var(--txt2clr);
+            background-color: var(--thmscnclr);
+        }
+    }
+    .grp_add {
+        background-color: var(--thmbg);
+    }
+    .zpl_gbox .zpl_tg {
+        background-color: var(--gryborderclr);
+    }
+    // PERMISSION STYLES
+    .zpl_pertbvw {
+        --brdr_prm: var(--gryborderclr);
+    }
+    // .zpl_perchkdv, .zpl_pertbvw span {
+    //     background-color: var(--thmscnclr);
+    // }
+    // .zpl_perrole {
+    //     border-bottom: 1px solid var(--thmgryclr);
+    // }
+    .zpl_persrch {
+        i {
+            &::before {
+                color: var(--thmtxt);
+            }
+        }
+        input {
+            color: var(--txt2clr);
+            background-color: transparent;
+            &::placeholder {
+                color: var(--thmtxt);
+            }
+        }
+    }
+    .zpl_perchkdv .zpl_perrgt i.IC-ar-dwn {
+        background-color: var(--thmbg);
+    }
+    .zpl_stprms.zpl_slcntrs .zpl_slcin {
+        background-color: var(--thmgryclr);
+    }
+    .zpl_crdlstbx>ul>li {
+        &:hover {
+            background-color: var(--thmbg);
+        }
+    }
+    // POPUP STYLES
+    .zpl_mmnu {
+        .zpl_mmnulft {
+            &::before {
+                background-color: var(--thmgryclr);
+            }
+            li {
+                b {
+                    box-shadow: var(--cbshdw);
+                }
+                &::after {
+                    background-color: var(--thmscnclr);
+                }
+            }
+        }
+    }
+    //SET LANDING STYLES
+    .bxcard {
+        box-shadow: var(--cbshdw);
+        &:hover {
+            box-shadow: var(--cbshdw-hvr);
+        }
+    }
+    .setng_mdl .bxcard .cmpnm {
+        background-color: transparent;
+    }
+    .zpl_search {
+        // background-color: var(--thmgryclr);
+        background-color: transparent;
+        border: 1px solid var(--siderbaractcolor);
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+        input {
+            border-radius: 8px;
+        }
+    }
+    // TABLE STYLES
+    .zpl_tblres {
+        .zpl_tbl {
+            tr {
+                th {
+                    color: var(--txt4clr);
+                    background-color: var(--thmgryclr);
+                    border-color: var(--thmgryclr);
+                }
+                &:hover {
+                    td {
+                        background-color: var(--thmscnclr) !important;
+                    }
+                }
+                td {
+                    --brdr_sec: transparent;
+                    // color: var(--txt4clr);
+                    span {
+                        >i {
+                            &::before {
+                                color: var(--txt2clr);
+                            }
+                            >i {
+                                &::before {
+                                    color: var(--txt2clr);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .PI_user,
+        .PI_perm_no,
+        .PI_perm_star,
+        .PI_perm_sub,
+        .PI_group i::before {
+            color: var(--txt2clr);
+        }
+        .zpl_dtbl {
+            >ul {
+                background-color: var(--thmgryclr);
+                li {
+                    border: 0;
+                }
+            }
+            >div {
+                .zpl_dtblsub {
+                    background-color: var(--thmbg);
+                }
+            }
+        }
+    }
+    .zpl_hvr {
+        i {
+            background-color: var(--thmgryclr);
+        }
+    }
+    .zpl_drpdwn li:hover,
+    li.on-hover .zmenu__text {
+        background-color: var(--thmscnclr);
+        color: var(--txt2clr)
+    }
+    .zpl_tbl .thsval_frm {
+        background-color: var(--gryborderclr);
+        color: var(--txt4clr);
+    }
+    .zpl_perhdlst li i {
+        &::before {
+            color: var(--txt2clr);
+        }
+    }
+    .zpl_perrole.zpl_perdtalst ul+ul li i,
+    .zpl_fpercntlf ul li i {
+        &::before {
+            color: var(--txt2clr);
+        }
+        &>i {
+            &::before {
+                color: var(--txt2clr);
+            }
+        }
+    }
+    // TIMELY STYLES
+    .zpl_cndor .zpl_gbox .zpl_cndop span {
+        background-color: var(--thmgryclr);
+        border-color: var(--thmgryclr);
+        color: var(--txt2clr);
+    }
+    // TOPMENU STYLES
+    .zpl_topmnu {
+        //background-color: var(--navclr);
+        color: var(--txtclrw);
+        border-top: 1px solid var(--bordercolor);
+        border-bottom: 0;
+        box-shadow: var(--dbshdw);
+        z-index: 1;
+    }
+    // CASES STYLES
+    .zpl_catlst {
+        background-color: var(--thmbg);
+    }
+    .zlistbox__item {
+        background-color: var(--thmscnclr);
+        .zlistbox__text {
+            color: var(--txt2clr);
+        }
+        &.on-hover {
+            .zlistbox__text {
+                color: var(--txt2clr);
+            }
+        }
+    }
+    // BOTTOM SAVE STYLE
+    .zpl_fbtn {
+        background-color: var(--thmbg);
+    }
+    // ORGANISATIONS - SERVICE SETTINGS
+    .zpl_custcrd .zpl_crdcnt>.zpl_itbl:hover {
+        background-color: var(--thmscnclr);
+    }
+    
+    .zpl_orgservc ul li .zpl_itbl.zpl_subtbl:nth-child(2) {
+        border-color: var(--gryborderclr);
+    }
+    .zpl_apilstdv div ul li {
+        border-color: var(--gryborderclr);
+    }
+    .zpl_icncnt i:hover {
+        background-color: var(--thmgryclr);
+    }
+}

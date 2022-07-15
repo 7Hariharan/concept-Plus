@@ -1,0 +1,159 @@
+.zpl_QAcstm {
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .zcheckbox {
+        margin-top: 3px;
+    }
+    .zpl {
+        &_crd {
+            &cnt {
+                padding: 15px 30px 15px;
+            }
+        }
+        &_secn>div {
+            margin-top: 0;
+        }
+    }
+    .IC-ar-dwn {
+        cursor: pointer;
+        font-size: var(--fontSz14);
+        margin-left: 10px;
+        padding-top: 2px;
+        &::before {
+            color: var(--txt3clr);
+        }
+    }
+    .zpl_perchkdv {
+        &.open {
+            .queTxt {
+                overflow: auto !important;
+                text-overflow: initial !important;
+                -webkit-line-clamp: inherit !important;
+            }
+        }
+    }
+    .zpl_perrgt {
+        gap: inherit;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+    .zpl_fpercnt {
+        display: block;
+        margin-left: 50px;
+        border-top: 1px solid #f2f2f2;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        h6 {
+            margin-left: 0;
+        }
+    }
+    .ans {
+        &Con {
+            margin-top: 15px;
+            // margin-left: 5px;
+        }
+    }
+    .zpl_tg {
+        margin: 0 10px 0;
+    }
+    .qa {
+        &Con {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            padding-right: 5px;
+            padding-left: 5px;
+            .PI_drag {
+                position: absolute;
+                left: -17px;
+                top: 5px;
+            }
+            .que {
+                &Hldr {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 25px;
+                    >b {
+                        // margin-top: -20px;
+                        &+span {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                &Txt {
+                    font-size: var(--fontSz14);
+                    display: flex;
+                    color: var(--txt2clr);
+                    line-height: 20px;
+                    padding-top: 2px;
+                    // padding-left: 5px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+                &Actn {
+                    float: right;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+                &Mark {
+                    color: var(--txt6clr);
+                    font-size: var(--fontSz14);
+                    min-width: 100px;
+                    max-width: 100px;
+                    min-height: 25px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 12px;
+                    text-align: left;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    vertical-align: middle;
+                }
+            }
+            span {
+                >i {
+                    margin-right: 12px;
+                    margin-left: 3px;
+                    font-size: 18px;
+                    border-radius: 5px;
+                    background-color: var(--thmgryclr);
+                    height: 26px;
+                    width: 28px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--txt3clr);
+                }
+                &+span {
+                    padding-left: 0px !important;
+                }
+                >.zpl_qnum{
+                    padding: 3px 10px;
+                    border: 1px solid var(--brdr_prm);
+                    margin-right: 5px;
+                    border-radius: 4px;
+                    font-size: 12px;
+                    max-width: 29px;
+                    overflow: hidden;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    &.zpl_survyQues{
+        .zpl_crdcnt {
+            padding: 5px;
+        }
+    }
+}

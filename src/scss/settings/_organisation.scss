@@ -1,0 +1,108 @@
+//Company Details
+.zpl_lgoupld {
+    position: relative;
+    padding: 10px;
+    height: 80px;
+    width: 220px;
+    transition: 0.3s all;
+    display: inline-flex;
+    justify-content: center;
+    background-color: var(--thmbg);
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    .zpl_upld {
+        &hvr {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(236, 246, 255, 0.8);
+            transition: 0.3s all;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            i {
+                font-size: var(--fontSz14);
+                margin-right: 5px;
+            }
+            span {
+                position: absolute;
+                bottom: 4px;
+                right: 10px;
+                font-size: var(--fontSz12);
+                cursor: pointer;
+                color: var(--actioncolor);
+                display: inherit;
+            }
+        }
+        &btn {
+            font-size: 10px;
+            padding: 1px 6px;
+            border: 1px solid #b7b7b7;
+            cursor: pointer;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &:hover {
+        .zpl_upldhvr {
+            display: flex;
+        }
+    }
+}
+
+.zpl_cmpy {
+    .ztextbox,
+    .ztextfilefield,
+    .ztextbox,
+    .zselectbox {
+        width: 220px !important;
+    }
+}
+
+.zpl_frmtwo .zpl_secn {
+    display: flex;
+    align-items: center;
+    &>div {
+        margin: 0;
+        width: 17%;
+        &+div {
+            width: 80%;
+        }
+    }
+}
+
+.zpl_empupldlgo {
+    margin-bottom: 0;
+    .zpl_drop {
+        &:hover {
+            background-color: rgba(0, 136, 255, 0.04);
+            border-color: var(--primarybluclr);
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+        min-height: 250px;
+        // background-color: rgba(0,136,255,0.04);
+        // border:2px dashed var(--primarybluclr);
+        label {
+            position: static;
+            margin-bottom: 10px;
+            top: 0;
+            transform: translate(0);
+            width: 80px;
+            height: 80px;
+        }
+        &>div:nth-child(1n) {
+            max-height: inherit;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.zpl_trailplan {
+    margin: 60px 0;
+    text-align: center;
+    display: flex;
+    >div {
+        width: 100%;
+        padding: 32px;
+        border: 1px solid var(--gryborderclr);
+        border-right-width: 0;
+        height: 100%;
+        background-color: var(--thmbg);
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+        &.current {
+            border-top: 4px solid var(--primarybluclr);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            margin-top: -34px;
+            // padding-top: 59px;
+            border-radius: 3px;
+            position: relative;
+            >button,
+            >span {
+                display: none;
+            }
+            >div {
+                display: block;
+            }
+        }
+        &:last-child {
+            border-right-width: 1px;
+        }
+        h2 {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        ul {
+            text-align: left;
+            min-height: 400px;
+            >b {
+                display: block;
+                padding-bottom: 15px;
+            }
+            li {
+                position: relative;
+                line-height: 22px;
+                padding: 0 0 10px 22px;
+                font-size: 13px;
+                font-weight: var(--fontLight);
+                &::before {
+                    content: "\f16c";
+                    position: absolute;
+                    left: 0px;
+                    color: var(--primarygrnclr);
+                    font-family: zpfont;
+                }
+            }
+        }
+        >button {
+            display: block;
+            height: 40px;
+            width: 100%;
+            background-color: var(--primarybluclr);
+            color: #fff;
+            border: none;
+            box-shadow: none;
+            margin-bottom: 10px;
+            @include radius;
+            cursor: pointer;
+            &:hover {
+                background-color: #33a0ff;
+            }
+        }
+        >span {
+            color: var(--txt6clr);
+            display: block;
+            font-size: 13px;
+            font-weight: var(--fontLight);
+        }
+        >div {
+            color: var(--primaryredclr);
+            font-size: 15px;
+            margin-top: 60px;
+            display: none;
+        }
+    }
+}
+
+.zpl_subscrion{
+    margin-left: auto;
+    .zpl_itbl td > * + *{
+        margin-left: 0;
+        margin-top: 4px;
+        display: block;
+    }
+    .zpl_itbl td{
+        &:last-child{
+            padding-right: 0;
+        }
+        .zpl_lnkbg{
+            position: relative;
+            top: -8px;
+        }
+    }
+
+}
+.zpl_updtmelne{
+    margin-right: 20px;
+    span{
+        font-size: 16px;
+        margin-top: 4px;
+        display: block;
+    }
+}

@@ -1,0 +1,626 @@
+@font-face {
+    font-family: 'Peopleicon';
+    src: url('../fonts/Peopleicon.ttf?1g4c6e') format('truetype'), url('../fonts/Peopleicon.woff?1g4c6e') format('woff'), url('../fonts/Peopleicon.svg?1g4c6e#Peopleicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.PI_tool:before,
+.PI_pin:before,
+.PI_help2:before,
+.PI_quick_action:before,
+.PI_referal:before,
+.PI_askhr:before,
+.PI_subscription:before,
+.PI_notes1:before,
+.PI_help1:before,
+.PI_thememod .path1:before,
+.PI_thememod .path2:before,
+.PI_thememod .path3:before,
+.PI_thememod .path4:before,
+.PI_thememod .path5:before,
+.PI_thememod .path6:before,
+.PI_thememod .path7:before,
+.PI_fil_askus:before,
+.PI_fil_attendance:before,
+.PI_fil_custom:before,
+.PI_fil_home:before,
+.PI_fil_leave:before,
+.PI_fil_PA:before,
+.PI_fil_reports:before,
+.PI_fil_TT:before,
+.PI_fil_training:before,
+.PI_perm_star .path1:before,
+.PI_perm_star .path2:before,
+.PI_perm_star .path3:before,
+.PI_perm_sub .path1:before,
+.PI_perm_sub .path2:before,
+.PI_perm_sub .path3:before,
+.PI_perm_sub .path4:before,
+.PI_perm_sub .path5:before,
+.PI_perm_no .path1:before,
+.PI_perm_no .path2:before,
+.PI_perm_no .path3:before,
+.PI_anounce:before,
+.PI_notify:before,
+.PI_device:before,
+.PI_AT:before,
+.PI_badge:before,
+.PI_travel:before,
+.PI_calen:before,
+.PI_calc:before,
+.PI_calen2:before,
+.PI_cart:before,
+.PI_case:before,
+.PI_compliance:before,
+.PI_comment:before,
+.PI_exit:before,
+.PI_light:before,
+.PI_Icon_17:before,
+.PI_LT:before,
+.PI_calen_err:before,
+.PI_assign:before,
+.PI_list:before,
+.PI_test:before,
+.PI_bookmark:before,
+.PI_lms:before,
+.PI_location:before,
+.PI_medical:before,
+.PI_medicare:before,
+.PI_more:before,
+.PI_service:before,
+.PI_feed:before,
+.PI_note:before,
+.PI_org:before,
+.PI_cheer:before,
+.PI_chart:before,
+.PI_print:before,
+.PI_sand_time:before,
+.PI_key:before,
+.PI_lock:before,
+.PI_permission:before,
+.PI_user:before,
+.PI_setting:before,
+.PI_share:before,
+.PI_star:before,
+.PI_hdset:before,
+.PI_tag:before,
+.PI_timer:before,
+.PI_timetracker:before,
+.PI_clock1:before,
+.PI_training:before,
+.PI_training1:before,
+.PI_truck:before,
+.PI_travel1:before,
+.PI_performance:before,
+.PI_play:before,
+.PI_video:before,
+.PI_film:before,
+.PI_wallet:before,
+.PI_home:before,
+.PI_leave:before,
+.PI_help:before,
+.PI_file:before,
+.PI_din:before,
+.PI_folder:before,
+.PI_folder1:before,
+.PI_flag:before,
+.PI_entry:before,
+.PI_search:before,
+.PI_group:before,
+.PI_employee:before,
+.PI_store:before,
+.PI_drpbox:before,
+.PI_connect:before,
+.PI_benefit:before,
+.PI_test1:before,
+.PI_assign1:before,
+.PI_cloud:before,
+.PI_checklist:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Peopleicon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.PI_tool:before {
+    content: "\e96e";
+}
+
+.PI_pin:before {
+    content: "\e96f";
+}
+
+.PI_help2:before {
+    content: "\e971";
+}
+
+.PI_quick_action:before {
+    content: "\e968";
+    color: #0088FF;
+}
+
+.PI_referal:before {
+    content: "\e969";
+    color: #8775b5;
+}
+
+.PI_askhr:before {
+    content: "\e96a";
+    color: #417ec1;
+}
+
+.PI_subscription:before {
+    content: "\e96b";
+    color: var(--primaryylwclr);
+}
+
+.PI_notes1:before {
+    content: "\e96c";
+    color: #619a5b;
+}
+
+.PI_help1:before {
+    content: "\e96d";
+    color: #7d6ead;
+}
+
+.PI_thememod .path1:before {
+    content: "\e961";
+    color: rgb(191, 198, 205);
+}
+
+.PI_thememod .path2:before {
+    content: "\e962";
+    margin-left: -1.1318359375em;
+    color: rgb(191, 198, 205);
+}
+
+.PI_thememod .path3:before {
+    content: "\e963";
+    margin-left: -1.1318359375em;
+    color: rgb(191, 198, 205);
+}
+
+.PI_thememod .path4:before {
+    content: "\e964";
+    margin-left: -1.1318359375em;
+    color: rgb(191, 198, 205);
+}
+
+.PI_thememod .path5:before {
+    content: "\e965";
+    margin-left: -1.1318359375em;
+    color: rgb(191, 198, 205);
+}
+
+.PI_thememod .path6:before {
+    content: "\e966";
+    margin-left: -1.1318359375em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_thememod .path7:before {
+    content: "\e967";
+    margin-left: -1.1318359375em;
+    color: rgb(191, 198, 205);
+}
+
+.PI_fil_askus:before {
+    content: "\e958";
+}
+
+.PI_fil_attendance:before {
+    content: "\e959";
+}
+
+.PI_fil_custom:before {
+    content: "\e95a";
+}
+
+.PI_fil_home:before {
+    content: "\e95b";
+}
+
+.PI_fil_leave:before {
+    content: "\e95c";
+}
+
+.PI_fil_PA:before {
+    content: "\e95d";
+}
+
+.PI_fil_reports:before {
+    content: "\e95e";
+}
+
+.PI_fil_TT:before {
+    content: "\e95f";
+}
+
+.PI_fil_training:before {
+    content: "\e960";
+}
+
+.PI_perm_star .path1:before {
+    content: "\e94d";
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_star .path2:before {
+    content: "\e94e";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_star .path3:before {
+    content: "\e94f";
+    margin-left: -1em;
+    color: rgb(184, 214, 73);
+}
+
+.PI_perm_sub {
+    display: inline-block;
+}
+
+.PI_perm_sub .path1:before {
+    content: "\e950";
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_sub .path2:before {
+    content: "\e951";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_sub .path3:before {
+    content: "\e952";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_sub .path4:before {
+    content: "\e953";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_sub .path5:before {
+    content: "\e954";
+    margin-left: -1em;
+    color: rgb(184, 214, 73);
+}
+
+.PI_perm_no .path1:before {
+    content: "\e955";
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_no .path2:before {
+    content: "\e956";
+    margin-left: -1em;
+    color: rgb(0, 0, 0);
+}
+
+.PI_perm_no .path3:before {
+    content: "\e957";
+    margin-left: -1em;
+    color: rgb(105, 105, 105);
+}
+
+.PI_anounce:before {
+    content: "\e900";
+}
+
+.PI_notify:before {
+    content: "\e901";
+}
+
+.PI_device:before {
+    content: "\e902";
+}
+
+.PI_AT:before {
+    content: "\e903";
+}
+
+.PI_badge:before {
+    content: "\e904";
+}
+
+.PI_travel:before {
+    content: "\e905";
+}
+
+.PI_calen:before {
+    content: "\e906";
+}
+
+.PI_calen1:before {
+    content: "\e907";
+}
+
+.PI_calc:before {
+    content: "\e908";
+}
+
+.PI_calen2:before {
+    content: "\e909";
+}
+
+.PI_cart:before {
+    content: "\e90a";
+}
+
+.PI_case:before {
+    content: "\e90b";
+}
+
+.PI_compliance:before {
+    content: "\e90c";
+}
+
+.PI_comment:before {
+    content: "\e90d";
+}
+
+.PI_exit:before {
+    content: "\e90e";
+}
+
+.PI_light:before {
+    content: "\e90f";
+}
+
+.PI_Icon_17:before {
+    content: "\e910";
+}
+
+.PI_LT:before {
+    content: "\e911";
+}
+
+.PI_calen_err:before {
+    content: "\e912";
+}
+
+.PI_assign:before {
+    content: "\e913";
+}
+
+.PI_list:before {
+    content: "\e914";
+}
+
+.PI_test:before {
+    content: "\e915";
+}
+
+.PI_bookmark:before {
+    content: "\e916";
+}
+
+.PI_lms:before {
+    content: "\e917";
+}
+
+.PI_location:before {
+    content: "\e918";
+}
+
+.PI_medical:before {
+    content: "\e919";
+}
+
+.PI_medicare:before {
+    content: "\e91a";
+}
+
+.PI_more:before {
+    content: "\e91b";
+}
+
+.PI_service:before {
+    content: "\e91c";
+}
+
+.PI_feed:before {
+    content: "\e91d";
+}
+
+.PI_note:before {
+    content: "\e91e";
+}
+
+.PI_org:before {
+    content: "\e91f";
+}
+
+.PI_cheer:before {
+    content: "\e920";
+}
+
+.PI_chart:before {
+    content: "\e921";
+}
+
+.PI_print:before {
+    content: "\e922";
+}
+
+.PI_sand_time:before {
+    content: "\e923";
+}
+
+.PI_key:before {
+    content: "\e924";
+}
+
+.PI_lock:before {
+    content: "\e925";
+}
+
+.PI_permission:before {
+    content: "\e926";
+}
+
+.PI_user:before {
+    content: "\e927";
+}
+
+.PI_setting:before {
+    content: "\e928";
+}
+
+.PI_share:before {
+    content: "\e929";
+}
+
+.PI_star:before {
+    content: "\e92a";
+}
+
+.PI_hdset:before {
+    content: "\e92b";
+}
+
+.PI_tag:before {
+    content: "\e92c";
+}
+
+.PI_timer:before {
+    content: "\e92d";
+}
+
+.PI_timetracker:before {
+    content: "\e92e";
+}
+
+.PI_clock1:before {
+    content: "\e92f";
+}
+
+.PI_training:before {
+    content: "\e930";
+}
+
+.PI_training1:before {
+    content: "\e931";
+}
+
+.PI_truck:before {
+    content: "\e932";
+}
+
+.PI_travel1:before {
+    content: "\e933";
+}
+
+.PI_performance:before {
+    content: "\e934";
+}
+
+.PI_play:before {
+    content: "\e935";
+}
+
+.PI_video:before {
+    content: "\e936";
+}
+
+.PI_film:before {
+    content: "\e937";
+}
+
+.PI_wallet:before {
+    content: "\e938";
+}
+
+.PI_home:before {
+    content: "\e939";
+}
+
+.PI_leave:before {
+    content: "\e93a";
+}
+
+.PI_help:before {
+    content: "\e93b";
+}
+
+.PI_file:before {
+    content: "\e93c";
+}
+
+.PI_din:before {
+    content: "\e93d";
+}
+
+.PI_folder:before {
+    content: "\e93e";
+}
+
+.PI_folder1:before {
+    content: "\e93f";
+}
+
+.PI_flag:before {
+    content: "\e940";
+}
+
+.PI_entry:before {
+    content: "\e941";
+}
+
+.PI_search:before {
+    content: "\e942";
+}
+
+.PI_group:before {
+    content: "\e943";
+}
+
+.PI_employee:before {
+    content: "\e944";
+}
+
+.PI_store:before {
+    content: "\e945";
+}
+
+.PI_drpbox:before {
+    content: "\e946";
+}
+
+.PI_connect:before {
+    content: "\e947";
+}
+
+.PI_benefit:before {
+    content: "\e948";
+}
+
+.PI_test1:before {
+    content: "\e949";
+}
+
+.PI_assign1:before {
+    content: "\e94a";
+}
+
+.PI_cloud:before {
+    content: "\e94b";
+}
+
+.PI_checklist:before {
+    content: "\e94c";
+}

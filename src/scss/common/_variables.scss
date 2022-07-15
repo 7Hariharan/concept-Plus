@@ -1,0 +1,145 @@
+//Puvi Font
+$font: ZohoPuvi;
+$fontThin: 100;
+$fontLight: 300;
+$fontRegular:400;
+$fontMedium:500;
+$fontSemibold: 600;
+$fontBold:700;
+$fontExtraBold:800;
+//Font Size
+$fontSz24: 24px;
+$fontSz22: 22px;
+$fontSz20: 20px;
+$fontSz18: 18px;
+$fontSz16: 16px;
+$fontSz15: 15px;
+$fontSz14: 14px;
+$fontSz13: 13px;
+$fontSz12: 12px;
+$fontSz11: 11px;
+//Input,select,Drop Down,Radio button,Checkbox(Border Color)
+$smltog: 16px;
+$mdtog: 20px;
+$boxshow: 0 1px 2px 0 rgba(0, 0, 0, .08),
+0 1px 3px 0 rgba(0, 0, 0, .01);
+$radiuscommon: 4px;
+$radius6: 6px;
+$radius8: 8px;
+$radius12: 12px;
+$mainradiuscard: 14px;
+$headsize: 24px;
+$lpane: var(--lpane); // leftpane
+$rpane: var(--rpane); // rightpane
+$navbar: var(--navbar); //Navbar
+$tband: var(--tband); // topband
+$filterwdt: 320px;
+// $topbrheight:36px;
+// $topgrpmnu:$topbandheight;
+// $btnmnu:$topbandheight;
+// $tblfxd:$topbandheight
+// Colors
+// $colors: ( thmbluclr: ( #0088FF), thmdrkclr:( #0B2345), thmgryclr:( #F5F5F9), primarybluclr: (#0088FF), primarygrnclr: (#10BC6B), primaryredclr: (#DC5C5D), primaryylwclr: (#F1A82F), primarygryclr: (#F5F5F9), //Primary colours
+// white: (#ffffff), textbluclr: (#0088FF), txtclrw: (#FFFFFF), txt2clr: (#222222), txt4clr: (#444444), txt6clr: (#666666), txt8clr: (#888888), // var(--switchgrnclr): #77CF83;
+// bodyclr: (#0088FF), gryborderclr: (#DCDCDC), switchgrnclr: (#0088FF), //Side Bar Active Color
+// siderbaractcolor: (#E5E5F0), //Form Color
+// fromBorclr: (#DCDCDC), drophover: (#f1f4f7), radichk: (#0088FF), bordercolor: (#f5f5f5), tblheadbordertwo: (#dcdcdc), mdlclsbg: (#5f5f5f), tablehover: (#fcfcfc), tablehead: (#e5e5f0), actioncolor: (#0088FF), thmbg: (#FFFFFF), thmscnclr: (#EFF1F6), thmtxt: (#676C88), thmhdr: (#FFFFFF), dbshdw: 0px 4px 5px 0px rgba(0, 0, 0, 0.14), cbshdw: 0 2px 5px 0 rgba(0, 0, 0, 0.30) 0 1px 3px 0 rgba(0, 0, 0, 0.50), cbshdw-hvr: 1px 8px 14px 0px rgba(0, 0, 0, 0.30) 1px 5px 6px 7px rgba(0, 0, 0, 0.10), //default
+// // thmbg: (#0C143F), thmscnclr: (#2A3058), thmtxt: (#b3b7da) //Darktheme
+// brdr_prm:#dcdcdc,brdr_sec:#f5f5f9,grybg:#f5f5f5,dgrybg:#dee1e6,
+// );
+:root {
+    --thmbluclr: #0088FF;
+    --thmdrkclr: #0B2345;
+    --thmgryclr: #F5F5F9;
+    --primarybluclr: #0088FF;
+    --primarygrnclr: #10BC6B;
+    --primaryredclr: #DC5C5D;
+    --primaryylwclr: #F1A82F;
+    --primarygryclr: #F5F5F9;
+    --primarybluligtclr: #E6F4FF;
+    --primarygrnligtclr: #DFFAED;
+    --primaryredligtclr: #FFE0E1;
+    --primaryylwligtclr: #FFF3E0;
+    --primarygryclr: #F5F5F9;
+    --navclr: #010A39;
+    --navclrbdr:#273352;
+    --leftbarclr: #ffffff;
+    --white: #ffffff;
+    --lnklight: rgba(0, 136, 255, 8%);
+    --textbluclr: #0088FF;
+    --txtclrw: #FFFFFF;
+    --txt2clr: #222222;
+    --txt4clr: #444444;
+    --txt6clr: #666666;
+    --txt26clr: #262626;
+    --txt78clr: #656D78;
+    --black: #000;
+    --txt8clr: #888888;
+    --bodyclr: #0088FF;
+    --gryborderclr: #DCDCDC;
+    --drkgryborderclr: #ADADAD;
+    --switchgrnclr: #0088FF;
+    --siderbaractcolor: #E5E5F0;
+    --fromBorclr: #DCDCDC;
+    --drophover: #f1f4f7;
+    --radichk: #0088FF;
+    --bordercolor: #f5f5f5;
+    --tblheadbordertwo: #dcdcdc;
+    --mdlclsbg: #5f5f5f;
+    --tablehover: #fcfcfc;
+    --tablehead: #e5e5f0;
+    --tablebordercolor: #eee;
+    --actioncolor: #0088FF;
+    --actioncolorlite: #EEF6FF;
+    --thmbg: #FFFFFF;
+    --thmscnclr: #EFF1F6;
+    --thmtxt: #676C88;
+    --thmhdr: #FFFFFF;
+    --dbshdw: 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+    --cbshdw: 0 2px 5px 0 rgba(0, 0, 0, 0.3) 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    --crdshdw: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.01);
+    --cbshdw-hvr: 1px 8px 14px 0px rgba(0, 0, 0, 0.3) 1px 5px 6px 7px rgba(0, 0, 0, 0.1);
+    --brdr_prm: #dcdcdc;
+    --brdr_sec: #f5f5f9;
+    --grybg: #f5f5f5;
+    --dgrybg: #dee1e6;
+    --cardhdrcolor: #EDEDF4;
+    --smltog: 16px;
+    --mdtog: 20px;
+    --lpane: 74px;
+    --rpane: 40px;
+    --navbar: 50px;
+    --tband: 60px;
+    --mnulftwidth: 300px;
+    --emcardwidth: 260px;
+    --mainspacing: 20px;
+    --topbrheight: 36px;
+    --tblfxdhgt: 56px;
+    --fixd: var(--mainspacing) + var(--topbrheight);
+    --fontSz24: #{$fontSz24};
+    --fontSz22: #{$fontSz22};
+    --fontSz20: #{$fontSz20};
+    --fontSz18: #{$fontSz18};
+    --fontSz16: #{$fontSz16};
+    --fontSz15: #{$fontSz15};
+    --fontSz14: #{$fontSz14};
+    --fontSz13: #{$fontSz13};
+    --fontSz12: #{$fontSz12};
+    --fontSz11: #{$fontSz11};
+    --fontThin: #{$fontThin};
+    --fontLight: #{$fontLight};
+    --fontRegular: #{$fontRegular};
+    --fontMedium: #{$fontMedium};
+    --fontSemibold: #{$fontSemibold};
+    --fontBold: #{$fontBold};
+    --fontExtraBold: #{$fontExtraBold};
+    // Lightbox
+    --Lboxtpbnd: 50px;
+    --Lboxbtm: 60px;
+    // Module Popup Size
+    --msizelg: 1400px;
+    --msizemd: 1024px;
+    //Main card border radius
+    --maincardbrradius:#{$mainradiuscard};
+    --radius12:#{$radius12};
+}

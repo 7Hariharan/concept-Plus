@@ -1,0 +1,92 @@
+.zpl_usr_crd {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    >div {
+        padding: 24px 22px;
+       
+        height: 220px;
+        @include radius();
+        background-color: var(--thmbg);
+        position: relative;
+        text-align: center;
+        // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.01);
+        box-shadow: var(--cbshdw);
+        cursor: pointer;
+        transition: all 0.26s ease;
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 0px 17px 23px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);       
+            >font {
+                display: block;
+            }
+        }
+        >font {
+            position: absolute;
+            top: 16px;
+            right: 13px;
+            display: none;
+            i {
+                font-size: 15px;
+                cursor: pointer;
+                padding: 6px;
+                border-radius: 50%;
+                color: var(--txt6clr);
+                &:hover {
+                    background: #f1f1f1;
+                }
+            }
+        }
+        .zpl_prfl {
+            height: 94px;
+            width: 94px;
+            margin: 0px auto 0;
+        }
+        >h4 {
+            font-size: 14px;
+            color: var(--txt2clr);
+            line-height: 22px;
+            margin: 16px 0 0;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            em {
+                font-weight: var(--fontLight);
+                margin-right: 4px;
+            }
+        }
+        .zpl_rtbtm {
+            position: absolute;
+            bottom: 14px;
+            right: 18px;
+            // left: 50%;
+            // transform: translate(-50%, 0);
+            .zpl_str {
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                span {
+                    margin-left: 5px;
+                    font-weight: var(--fontRegular);
+                    letter-spacing: 0.5px;
+                    color: var(--txt8clr);
+                }
+            }
+        }
+    }
+}
+
+.zpl_prfl {
+    border-radius: 50%;
+    position: relative;
+    img {
+        border-radius: inherit;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

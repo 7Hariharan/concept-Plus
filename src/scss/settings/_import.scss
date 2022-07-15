@@ -1,0 +1,21 @@
+.zpl_imprtrecordvw{
+    margin-bottom: 20px;
+}
+
+.zpl_imprtrecord{
+    background: var(--white);
+padding: 15px;
+border-radius: 4px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    i{
+        font-size: 22px;
+    }
+}
+}

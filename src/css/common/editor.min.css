@@ -1,0 +1,1345 @@
+/* $Id$ */
+
+
+/* @font-face {
+  font-family: "Editor";
+  src: url('../images/ZoFo_RTE.eot');
+  src: url('../images/ZoFo_RTE.eot?#iefix') format('eot'), url('../images/ZoFo_RTE.woff') format('woff'), url('../images/ZoFo_RTE.ttf') format('truetype'), url('../images/ZoFo_RTE.svg#zmail') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+[class^="zei-"],
+[zei*=" zei-"] {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* [class^="zei-"] {
+  color: #888;
+}
+
+[class^="zei-"]:before,
+[zei*=" zei-"]:before {
+  font-family: Editor;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  width: 17px;
+  display: inline-block;
+  text-shadow: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0 3px;
+  cursor: pointer;
+  text-align: center;
+} */
+
+[class^="zei-"]:before,
+[zei*=" zei-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'zpclr-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*  The Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent zeis */
+
+.zei-bold:before {
+  content: "\ec74";
+}
+
+.zei-underline:before {
+  content: "\ec80";
+}
+
+.zei-strike:before {
+  content: "\ec8a";
+}
+
+.zei-removeformat:before {
+  content: "\ec76";
+}
+
+.zei-textleft:before {
+  content: "\ec87";
+}
+
+.zei-textright:before {
+  content: "\ec7c";
+}
+
+.zei-textcenter:before {
+  content: "\ec75";
+}
+
+.zei-textjustify:before {
+  content: "\ec78";
+}
+
+.zei-indent:before {
+  content: "\e90f";
+}
+
+.zei-outdent:before {
+  content: "\ec7c";
+}
+
+.zei-unorder:before {
+  content: "\ec83";
+}
+
+.zei-order:before {
+  content: "\ec7a";
+}
+
+.zei-link:before {
+  content: "\ec79";
+}
+
+.zei-unlink:before {
+  content: "\e912";
+}
+
+.zei-table:before {
+  content: "\ec7e";
+}
+
+.zei-line:before {
+  content: "\ec82";
+}
+
+.zei-smiley:before {
+  content: "\ec7d";
+}
+
+.zei-fontfamily:before {
+  content: "\ec77";
+  width: 16px;
+  font-size: 14px;
+}
+
+.zei-quote:before {
+  content: "\ec7b";
+}
+
+.zei-image:before {
+  content: "\ec84";
+}
+
+.zei-arrow:before {
+  content: "\ec88";
+  color: #979797!important;
+  font-size: 5px;
+}
+
+.zei-italic:before {
+  content: "\ec86";
+}
+
+.zei-rarrow:before {
+  content: "\e902";
+}
+
+.zei-close:before {
+  content: "\e931";
+}
+
+.zei-uncheck:before {
+  content: "\e91b";
+}
+
+.zei-check:before {
+  content: "\e91c";
+}
+
+.zei-option:before {
+  content: "\ec9f";
+}
+
+.zei-unoption:before {
+  content: "\eca0";
+}
+
+.zei-attachment:before {
+  content: "\ec73";
+}
+
+.zei-more:before {
+  content: "\e91a";
+}
+
+.zei-textclr:before {
+  content: "\ec7f";
+}
+
+.zei-rtl:before {
+  content: "\e922";
+}
+
+.zei-ltr:before {
+  content: "\e923";
+}
+
+.zei-html:before {
+  content: "\ecfb";
+}
+
+.zei-bgclr:before {
+  content: "\ec81";
+  top: 3px;
+  position: absolute;
+  font-size: 15px;
+}
+
+.zei-bullet:before {
+  content: "\ec83";
+}
+
+.zei-indent-inc::before {
+  content: "\ec8d";
+}
+
+.zei-indent-dec::before {
+  content: "\ec85";
+}
+
+.zei-spellCheck:before {
+  content: "\e925";
+}
+
+.zei-tick:before {
+  content: "\e926";
+}
+
+.zei-custDict:before {
+  content: "\e927";
+}
+
+.zei-bgclr {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin: 7px 2px 3px 2px;
+  background-image: url('../images/zme.png');
+  background-position: -83px -2px;
+}
+
+.zei-add-title::before {
+  content: "\ec72";
+}
+
+.zei-rem-title::before {
+  content: "\ec89";
+}
+
+.zei-template:before {
+  content: "\e92c";
+}
+
+.zei-signature:before {
+  content: "\e92b";
+}
+
+.zei-pin:before {
+  content: "\e928";
+}
+
+.zei-unpin:before {
+  content: "\e929";
+}
+
+.zei-editHtml:before {
+  content: "\e92a"
+}
+
+
+/* Menu Button area*/
+
+.ze_SCmb {
+  background-color: #fafafa;
+  height: 36px;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: helvetica;
+  font-size: 13px;
+  padding: 0 10px 0 1px;
+  position: relative;
+}
+
+.ze_SCmb font {
+  width: 1px;
+  overflow: hidden;
+  float: left;
+  background-color: #e5e5e5;
+  height: 16px;
+  margin-top: 5px;
+}
+
+.ze_SCmb ul,
+.ze_SCmb li {
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+
+.ze_SCmb ul {
+  margin: 0;
+}
+
+.ze_SCmb li {
+  margin: 0 0 0 1px;
+}
+
+.ze_SCmb ul li:first-child {
+  margin: 0;
+}
+
+.ze_SCmb li b {
+  font-size: 15px;
+  height: 27px;
+  line-height: 25px;
+  padding: 1px 3px;
+  display: block;
+  position: relative;
+  font-weight: normal;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  -ms-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.ze_SCmb li b span.ze_pdl {
+  /* padding-left: 5px; */
+  position: relative;
+  top: 2px;
+}
+
+.ze_SCmb li b div.ze_hd {
+  position: absolute;
+  border: 1px solid #e0e0e0;
+  border-width: 1px 0;
+  width: 5px;
+  height: 100%;
+  top: -1px;
+  left: -3px;
+}
+
+.ze_SCmb li b.ze_dn div.ze_hd {
+  background-color: #FFF;
+  height: 4px;
+  margin: 0 0 0 -3px;
+  width: 100%;
+  z-index: 599;
+  display: block;
+  left: 3px;
+  top: 31px;
+  position: absolute;
+  border: 0;
+}
+
+
+/* .ze_SCmb li b.ze_dn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom: 0px solid #fff;
+
+  height: 36px;
+  padding: 1px 4px 0;
+} */
+
+.ze_SCmb li b:hover {
+  background-color: #f1f1f1;
+}
+
+.ze_SCmb li b:hover span:before,
+.ze_SCmb li b.ze_Sel span:before {
+  /* color: #222 !important */
+}
+
+.ze_SCmb li b.ze_dn.ze_Sel div.ze_hd {
+  background-color: #FFF;
+  border: 0px
+}
+
+.ze_SCmb li b.ze_dn.ze_Sel {
+  /* background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom: 0px solid #fff;
+  margin: -1px -1px 0 -1px;
+  height: 35px; 
+  padding-top: 1px 3px;*/
+}
+
+.ze_alttool {
+  position: absolute;
+  padding: 0px;
+  z-index: 998
+}
+
+
+/*dropdown area */
+
+.ze_dd {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  z-index: 500;
+  /*overflow:hidden; overflow-y:auto*/
+}
+
+.ze_dd ul {
+  margin: -5px 0px 0px -5px;
+  padding: 0;
+  background-color: #fff;
+  /* border: 1px solid #cccccc; */
+  border-top: 0px;
+  overflow: hidden;
+  overflow-y: auto;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.14);
+}
+
+.ze_dd .ze_ddr {
+  margin: -5px -5px 0 0;
+  -moz-box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.ze_tbdr {
+  border-top: 1px solid #CCC!important;
+}
+
+.ze_dd li {
+  font-size: 12px;
+  float: none;
+  padding: 7px 15px;
+  line-height: 20px;
+  height: 20px;
+  list-style: none;
+  cursor: pointer;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  -ms-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.ze_dd li:hover,
+.ze_dd li.sel {
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+.ze_lne {
+  padding: 0!important;
+  background-color: #dadada;
+  height: 1px!important;
+  line-height: 1px!important;
+  overflow: hidden!important;
+}
+
+.ze_dd {
+  position: absolute;
+  margin: 0;
+  opacity: 0;
+  display: block;
+}
+
+.zei-arrow,
+.zei-arrow:before {
+  width: 13px;
+  height: auto;
+  /* padding-top: 2px;
+  padding-right: 6px; */
+  text-align: center;
+}
+
+.zei-arrow {
+  margin-right: -3px;
+  margin-top: -3px;
+}
+
+.zei-arrow:before {
+  padding-left: 0;
+}
+
+.zei-arrow.ze-big,
+.zei-arrow.ze-big:before {
+  width: 34px;
+  padding-right: 0;
+}
+
+.ze_dd.shw {
+  opacity: 1;
+}
+
+
+/* line 652, ../../../../../sass/base.scss */
+
+.ze_dd li:hover {
+  background-color: #F5F4F5;
+}
+
+
+/* color picker and smiley dropdown */
+
+ul.ze_cb {
+  height: 155px;
+  width: 235px;
+}
+
+ul.ze_cb li {
+  cursor: pointer;
+  display: inline;
+  float: left;
+  line-height: normal;
+  list-style-type: none;
+  margin: 3px 0 0 5px;
+  overflow: hidden;
+  height: 14px;
+  width: 14px;
+  padding: 0;
+  border: 1px solid #999;
+}
+
+ul.ze_sb {
+  width: 204px;
+  padding: 5px;
+}
+
+ul.ze_sb li {
+  cursor: pointer;
+  display: inline;
+  float: left;
+  line-height: normal;
+  list-style-type: none;
+  overflow: hidden;
+  border: 1px solid #fff;
+  margin: 1px;
+  padding: 3px;
+  width: 24px;
+  height: 24px;
+}
+
+ul.ze_sb li:hover {
+  box-shadow: #808080 0 0 1px;
+  background-color: #fff;
+}
+
+
+/* overlay */
+
+.ze_orly {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .6;
+  z-index: 999;
+}
+
+.ze_esel {
+  background-color: #f0f0f0;
+}
+
+.ze_btn b {
+  width: auto!important;
+  white-space: nowrap;
+  padding: 0 10px!important;
+}
+
+.ze_btn li:hover {
+  background-color: transparent;
+}
+
+.ze_SCmb.ze_btn {
+  background-color: #fff;
+  border-bottom: 0;
+}
+
+.ze_SCmb ul.ze_frt {
+  float: right;
+}
+
+.ze_phd {
+  background-color: #e5e5e5;
+  font-size: 110%;
+  padding: 5px 10px 0;
+  font-weight: bold;
+  position: relative;
+  top: -3px;
+}
+
+.ze_ptt {
+  background-color: #f5f5f5;
+}
+
+.ze_ptble {
+  font-size: 12px;
+  margin: 25px 30px;
+}
+
+
+/* .ze_ptble table {
+  font-size: 12px;
+  padding: 5px 20px 5px 0;
+} */
+
+.ze_ptble td:nth-child(2n) {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.ze_ptble span>i.zei-option,
+.ze_ptble span>i.zei-unoption {
+  vertical-align: middle;
+  /* margin-right: 7px; */
+}
+
+.ze_ptble label {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.ze_ptble input {
+  /* margin-right: 10px; */
+}
+
+.ze_m20 {
+  margin-right: 20px;
+}
+
+.ze_area {
+  width: 100%;
+  border: 0;
+}
+
+.ze-big:before {
+  font-size: 22px;
+  color: #666!important;
+}
+
+.ze_frt {
+  float: right!important;
+}
+
+.ze_bld {
+  font-weight: bold;
+}
+
+
+/* Popup */
+
+.zep_PU {
+  font-size: 12px;
+  position: absolute;
+  background-color: #fff;
+  /* border: 1px solid #c5c5c5; */
+  min-width: 375px;
+  max-width: 800px;
+  -moz-box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.zep_PUtts .zep_arr {
+  background-color: #f9f9f9;
+  -moz-box-shadow: 1px 1px 0 #fff inset;
+  -webkit-box-shadow: 1px 1px 0 #fff inset;
+  box-shadow: 1px 1px 0 #fff inset;
+}
+
+.zep_PUtt {
+  border-bottom: 1px solid #e5e5e5;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  color: #222;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.zep_PUtt i {
+  float: right;
+  font-size: 10px;
+}
+
+
+/*.zep_PUbtm{height:41px;border-top:1px solid #f1f1f1;text-align:center;padding-top:15px}
+.zep_PUbtm span{height:21px;border:1px solid #cecece;line-height:21px;padding:0px 14px;margin-right:8px;background-color:#ffffff;color:#666666;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;display:inline-block; cursor:pointer}
+.zep_PUbtm span:hover{background-color:#e2e2e2}*/
+
+.zep_PUbtm {
+  border-top: 1px dashed #c5c5c5;
+  text-align: center;
+  margin: 0 30px;
+  padding: 20px 0;
+}
+
+.zep_PUbtm span {
+  height: 21px;
+  border: 1px solid #cecece;
+  line-height: 21px;
+  padding: 3px 24px;
+  margin-right: 8px;
+  background-color: #fff;
+  color: #666;
+  display: inline-block!important;
+  cursor: pointer;
+  font-size: 110%;
+}
+
+.zep_PUbtm span:hover,
+.zep_PUbtm span.sel {
+  background-color: #565656;
+  color: #fff;
+}
+
+
+/*smileys*/
+
+.ze_angry,
+.ze_anxious,
+.ze_claps,
+.ze_coolnew,
+.ze_dislike,
+.ze_dizzy,
+.ze_doubtful,
+.ze_halo,
+.ze_idea,
+.ze_injured,
+.ze_like,
+.ze_lipssealed,
+.ze_lol,
+.ze_loveit,
+.ze_meh,
+.ze_neutral,
+.ze_ontarget,
+.ze_sad,
+.ze_searching,
+.ze_shocked,
+.ze_sick,
+.ze_sleepy,
+.ze_smilenew,
+.ze_tearofjoy,
+.ze_tensed,
+.ze_tongueout,
+.ze_winknew,
+.ze_worried,
+.ze_yoyo,
+.ze_yummy {
+  background-image: url('../images/smileys.png');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 1px;
+  overflow: hidden;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2),
+screen and (-o-min-device-pixel-ratio: 2/1),
+screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .ze_angry,
+  .ze_anxious,
+  .ze_claps,
+  .ze_coolnew,
+  .ze_dislike,
+  .ze_dizzy,
+  .ze_doubtful,
+  .ze_halo,
+  .ze_idea,
+  .ze_injured,
+  .ze_like,
+  .ze_lipssealed,
+  .ze_lol,
+  .ze_loveit,
+  .ze_meh,
+  .ze_neutral,
+  .ze_ontarget,
+  .ze_sad,
+  .ze_searching,
+  .ze_shocked,
+  .ze_sick,
+  .ze_sleepy,
+  .ze_smilenew,
+  .ze_tearofjoy,
+  .ze_tensed,
+  .ze_tongueout,
+  .ze_winknew,
+  .ze_worried,
+  .ze_yoyo,
+  .ze_yummy {
+    background-image: url('../images/smileysretina.png');
+    background-size: 240px 290px;
+  }
+}
+
+.ze_smilenew {
+  background-position: 0 0;
+}
+
+.ze_sad {
+  background-position: -168px -24px;
+}
+
+.ze_lol {
+  background-position: -24px 0px;
+  ;
+}
+
+.ze_angry {
+  background-position: -72px -48px;
+}
+
+.ze_tongueout {
+  background-position: -48px -24px;
+}
+
+.ze_coolnew {
+  background-position: -96px 0px;
+}
+
+.ze_winknew {
+  background-position: -24px -24px
+}
+
+.ze_meh {
+  background-position: -192px -72px;
+}
+
+.ze_tearofjoy {
+  background-position: -48px 0px;
+}
+
+.ze_shocked {
+  background-position: -48px -72px;
+}
+
+.ze_loveit {
+  background-position: -120px 0px;
+}
+
+.ze_neutral {
+  background-position: -168px -72px;
+}
+
+.ze_worried {
+  background-position: -24px -48px;
+}
+
+.ze_yummy {
+  background-position: -120px -24px;
+}
+
+.ze_sleepy {
+  background-position: -168px -48px;
+}
+
+.ze_dizzy {
+  background-position: -72px -72px;
+}
+
+.ze_sick {
+  background-position: -120px -72px;
+}
+
+.ze_injured {
+  background-position: -144px -72px;
+}
+
+.ze_idea {
+  background-position: 0px -24px;
+}
+
+.ze_doubtful {
+  background-position: -24px -72px;
+}
+
+.ze_tensed {
+  background-position: -96px -48px;
+}
+
+.ze_searching {
+  background-position: -216px 0px;
+}
+
+.ze_anxious {
+  background-position: 0px -48px;
+}
+
+.ze_lipssealed {
+  background-position: -216px -72px;
+}
+
+.ze_halo {
+  background-position: -96px -24px;
+}
+
+.ze_like {
+  background-position: 0px -120px;
+}
+
+.ze_dislike {
+  background-position: -24px -120px;
+}
+
+.ze_claps {
+  background-position: -168px -120px;
+}
+
+.ze_yoyo {
+  background-position: -120px -120px;
+}
+
+.ze_ontarget {
+  background-position: -24px -168px;
+}
+
+
+/*spellcheck*/
+
+.ze_spell {
+  position: absolute;
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  top: 35px;
+  right: 1px;
+}
+
+.ze_spell a {
+  padding: 0px 10px
+}
+
+.ze_spell i {
+  margin-left: 10px;
+}
+
+.ze_spell span {
+  padding: 0px 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.ze_spell span:hover {
+  text-decoration: underline;
+}
+
+
+/*insert image*/
+
+.ze_ptble .ze_iiInput {
+  padding-right: 15px;
+}
+
+.ze_ptble .ze_iiInput>div input {
+  width: 100%;
+}
+
+.ze_ptble .ze_iiSnF {
+  color: #a0a0a0;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 11px;
+  margin: 0;
+  padding: 8px 0 0;
+}
+
+.ze_ptble .ze_iiS {
+  color: #c2c2c2;
+  padding: 8px 0;
+}
+
+.ze_ptble .ze_iiS>span {
+  color: #222;
+}
+
+.ze_ptble .ze_iiI {
+  border: #e6e2e3 1px solid;
+  height: 120px;
+  width: 120px;
+}
+
+.ze_ptble .ze_input_text {
+  border: #e5e5e5 1px solid;
+  padding: 5px 10px;
+  width: 293px;
+  display: block;
+  font-style: italic;
+}
+
+.ze_ptble .ze_input_text:focus {
+  outline: none;
+}
+
+.ze_ptble .ze_iiIP {
+  color: #c3c3c3;
+  display: block;
+  line-height: 120px;
+  text-align: center;
+}
+
+.ze_popuperrmsg {
+  color: #F00;
+}
+
+.ze_imgpopupinfo {
+  color: #1DAF15;
+  font-weight: bold;
+  display: none;
+}
+
+.ze_change-captcha-icon {
+  background: url("../images/refresh.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  float: right;
+  height: 23px;
+  width: 38px;
+}
+
+
+/*dropdown select*/
+
+.ze_select {
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  outline: none;
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: 70%;
+  background-color: #FFF;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.ze_select select {
+  padding: 2px 20px 2px 8px;
+  background-color: #FFF;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  top: 0;
+}
+
+.ze_select:after {
+  content: "\e901";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  pointer-events: none;
+  font-family: Editor;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  text-shadow: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #555555;
+  text-align: center;
+}
+
+.zep_PUbtm span[data-val=Cancel],
+.zep_PUbtm span[data-val=Cancel]:hover {
+  border-color: transparent;
+  background-color: transparent
+}
+
+.zep_PUbtm span[data-val=Cancel]:hover {
+  color: blue;
+  text-decoration: underline
+}
+
+.ze_drag {
+  background-color: #fafafa;
+  border: 3px dashed #dedede;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+  position: relative;
+  height: 66%;
+  width: 70%;
+  top: 17%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.ze_drag span {
+  position: relative;
+  top: 46%;
+  color: #ccc;
+}
+
+.ze_autoFill li {
+  padding: 7px;
+}
+
+.ze_autoFill li img {
+  height: 20px;
+  width: 20px;
+  padding-right: 7px;
+  vertical-align: middle;
+}
+
+.ze_tableGridCol {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #ccc;
+  padding: 1px;
+}
+
+.ze_dd li.iTable {
+  height: auto;
+  padding: 10px;
+}
+
+.ze_dd li.iTable:hover {
+  background: #fff;
+}
+
+.ze_dropDown {
+  position: absolute;
+  background-color: #ffffff;
+  display: block;
+}
+
+.zei-tick {
+  position: absolute;
+  left: 0px;
+}
+
+.ze_spellCheck li {
+  padding: 7px 15px 7px 20px;
+  position: relative;
+}
+
+.zei-custDict {
+  position: absolute;
+  left: 2px;
+}
+
+.ze_dd ul.custom {
+  border-top: 1px solid #ccc;
+  margin-top: -1px;
+}
+
+.ze_dd ul.custom li {
+  padding-left: 25px;
+}
+
+ul.smiley-ddown {
+  width: 260px;
+}
+
+ul.smiley-ddown li {
+  float: left;
+  width: 100px;
+}
+
+.ze_rtl {
+  float: right;
+}
+
+.ze_rtl li {
+  float: right;
+}
+
+.ze_SCmbfrt>ul,
+.ze_SCmbfrt>ul li,
+.ze_SCmbfrt>font {
+  float: right;
+}
+
+.ze_popup {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+  border: 1px solid rgba(0, 0, 0, .1);
+  opacity: 1;
+  width: 900px;
+  max-height: 600px;
+  padding: 30px;
+  text-align: left;
+  font-family: arial;
+  position: fixed;
+  z-index: 1000;
+}
+
+.ze_popupTitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.ze_popup p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+}
+
+.ze_popupButton {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.ze_popupButton span {
+  height: 21px;
+  line-height: 21px;
+  padding: 3px 20px!important;
+  margin: 0 0 0 8px;
+  color: #fff;
+  display: inline-block!important;
+  cursor: pointer;
+  font-size: 86%;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.ze_popupButton span.sel,
+.ze_popupButton span:hover {
+  background-color: #10bc83;
+  border: 1px solid #10bc83;
+}
+
+.ze_popupButton span[data-val=Cancel] {
+  background-color: rgba(245, 245, 245, .7);
+  border: 1px solid rgba(229, 229, 229, .7);
+  color: #878787;
+}
+
+.ze_popupButton span[data-val=Cancel].sel,
+.ze_popupButton span[data-val=Cancel]:hover {
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+}
+
+.ze_popupTitle .zei-close {
+  float: right;
+}
+
+.ze_popupTab {
+  height: 31px;
+  border-bottom: 1px solid #ccc;
+}
+
+.ze_popupTab a {
+  float: left;
+  line-height: 30px;
+  background: #fff;
+  height: 30px;
+  margin: 0 6px 0 4px;
+  border-radius: 3px 3px 0 0;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  padding: 0 10px;
+  font-size: 13px;
+  color: #888;
+  text-decoration: none;
+}
+
+.ze_popupTab a.sel {
+  height: 31px;
+  background: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+  border-color: #ccc;
+}
+
+.ze_popupEditor {
+  display: block;
+  margin: 30px 0 0 0;
+  overflow: hidden;
+}
+
+.ze_popupEditor textarea {
+  height: 250px;
+  width: 100%;
+  display: block;
+  border: 1px solid #ddd;
+  float: left;
+  width: 48%;
+}
+
+.ze_popupEditor iframe {
+  height: 250px;
+  width: 100%;
+  display: block;
+  border: 1px solid #ddd;
+  background: #eee;
+  float: right;
+  width: 48%;
+}
+
+.deactive.ze_popupButton {
+  display: block;
+  position: relative;
+}
+
+.deactive.ze_popupButton:after {
+  background: rgba(255, 255, 255, 0.5);
+  content: "";
+  position: absolute;
+  height: 32px;
+  left: 0px;
+  right: 90px;
+}
+
+.ze_popup {
+  transition: all 1s ease;
+}
+
+.ze_popup.hide {
+  overflow: hidden;
+  width: 0px !important;
+  height: 0px !important;
+  left: 770px !important;
+  top: 95px !important;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.ze_popup.show {
+  transition: all 1s ease;
+  overflow: hidden;
+  box-sizing: border-box;
+  opacity: 1;
+}

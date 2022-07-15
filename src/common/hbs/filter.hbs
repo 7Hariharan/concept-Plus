@@ -1,0 +1,124 @@
+<div class="zpl_fltr">
+    <div>
+        <div class="zpl_fltrhd">
+            <h5>Filter</h5>
+            <i class="IC-cls" onclick="filterout()"></i>
+        </div>
+        {{!-- <input type="text" placeholder="Search..." class="ztextbox"> --}}
+        <div class="zpl_search zpl_srchsml">
+            <input placeholder="Search Settings" type="search" class="ztextbox">
+            <i class="PI_lens"></i>
+        </div>
+    </div>
+
+    <div class="zpl_fltrcnt">
+        <div>
+            <div class="zpl_fltclps fltopn">
+                <div>
+                    <font><i class="IC-ar-rgt"></i><b>System Filter</b></font>
+                </div>
+                <div class="zpl_fltrlst">
+                    <div class="zpl_secn">
+                        <div>
+                            <label>Approval Status</label>
+                        </div>
+                        <div>
+                            <select value="EH" class="zselectbox select-js has-focus has-mfocus">
+                                <option id="EH">All Request</option>
+                                <option id="YE">Open</option>
+                                <option id="ZM">Close</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="zpl_secn">
+                        <div>
+                            <label>Entity</label>
+                        </div>
+                        <div>
+                            <textarea class="tokenfieldId-js"></textarea>
+                        </div>
+                    </div>
+                    <div class="zpl_secn">
+                        <div>
+                            <label>Division</label>
+                        </div>
+                        <div>
+                            <div class="zcheckbox">
+                                <input id="lca431" type="checkbox" name="check" value="" class="zcheckbox__helper"
+                                    checked="">
+                                <label for="lca431" class="zcheckbox__label">Full day</label>
+                            </div>
+                            <div class="zpl_fgrp">
+                                <select value="EH" class="zselectbox select-js has-focus has-mfocus">
+                                    <option id="EH">Contains</option>
+                                    <option id="YE">Open</option>
+                                    <option id="ZM">Close</option>
+                                </select>
+                                <textarea class="tokenfieldId-js"></textarea>
+                            </div>
+                            <div class="zcheckbox">
+                                <input id="lca32" type="checkbox" name="check" value="" class="zcheckbox__helper">
+                                <label for="lca32" class="zcheckbox__label">Half day</label>
+                            </div>
+                            <div class="zcheckbox">
+                                <input id="lca233" type="checkbox" name="check" value="" class="zcheckbox__helper">
+                                <label for="lca233" class="zcheckbox__label">Quarter day</label>
+                            </div>
+                            <div class="zcheckbox">
+                                <input id="lca231" type="checkbox" name="check" value="" class="zcheckbox__helper">
+                                <label for="lca231" class="zcheckbox__label">Hourly</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zpl_fltclps fltopn">
+                <div>
+                    <font><i class="IC-ar-rgt"></i><b>System Filter</b></font>
+                </div>
+                <div class="zpl_fltrlst">
+                    <div class="zpl_secn">
+                        <div>
+                            <label>Approval Status</label>
+                        </div>
+                        <div>
+                            <select value="EH" class="zselectbox select-js has-focus has-mfocus">
+                                <option id="EH">All Request</option>
+                                <option id="YE">Open</option>
+                                <option id="ZM">Close</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="zpl_secn">
+                        <div>
+                            <label>Entity</label>
+                        </div>
+                        <div>
+                            <select value="EH" class="zselectbox select-js has-focus has-mfocus">
+                                <option id="EH">All Request</option>
+                                <option id="YE">No Entity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="zpl_secn">
+                        <div>
+                            <label>Buisness Unit</label>
+                        </div>
+                        <div>
+                            <select value="EH" class="zselectbox select-js has-focus has-mfocus">
+                                <option id="EH">All Buisness Unit</option>
+                                <option id="YE">No Entity</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="addPolicy1" type="button" class="zlabel zlabel--blue zlabel--medium"
+            onclick="filterout()">Apply</button>
+        <button type="button" class="zlabel zlabel--outline zlabel--medium" onclick="filterout()">Reset</button>
+    </div>
+
+</div>

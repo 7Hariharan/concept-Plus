@@ -1,0 +1,54 @@
+.zpl_Emptydata {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    &.zpl_txtlft {
+        text-align: left;
+    }
+    &.Emp_dark {
+        >div {
+            h4 {
+                color: #ffffff;
+            }
+            p {
+                color: #bfd3de;
+            }
+        }
+    }
+    .zpl_emptimg {
+        width: 240px;
+        height: 200px;
+        margin: auto;
+        display: block;
+        margin-bottom: 45px;
+    }
+    >div {
+        >font {
+            margin: auto;
+            margin-bottom: 10px;
+            display: block;
+        }
+        h4 {
+            color: var(--txt2clr);
+            margin: 0 0 14px;
+        }
+        p {
+            font-weight: var(--fontLight);
+            font-size: 14px;
+            margin: 0px 0 16px;
+            line-height: 22px;
+            color: var(--txt4clr);
+        }
+    }
+    .zpl_idivingrp {
+        text-align: left;
+    }
+    .zpl_secn {
+        &+.zpl_upld {
+            margin-top: 30px;
+        }
+    }
+    &+.zpl_info {
+        margin-top: 100px;
+    }
+}

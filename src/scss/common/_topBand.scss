@@ -1,0 +1,154 @@
+.zpl_Nav {
+    background-color: var(--navclr);
+    border-radius: 0;
+    height: $navbar;
+    @include position(absolute, 0, 0, auto, 0);
+    z-index: 1;
+    box-shadow: 0px -10px 11px 2px #000000;
+}
+
+.zpl_header {
+    width: 100%;
+    height: $navbar;
+    transition: all ease 0.3s;
+    display: flex;
+    .zpl_mnLgo {
+        width: 25px;
+        height: 25px;
+        margin: 10px 24px 0;
+        position: relative;
+        img {
+            @include position(absolute, 0, 0, 0, 0);
+            margin: auto;
+            // width: 75px;
+            // height: 25px;
+        }
+    }
+}
+
+.zpl_lmin {
+    .zpl_mnLgo {
+        margin: 10px 12px 0;
+    }
+    .zpl_topmnu {
+        left: 50px;
+    }
+}
+
+.zpl_glsrch {
+    // float: left;
+    // width: 600px;
+    // padding: 10px;
+    // @include position(absolute, 0px, 0, auto, 0);
+    // margin: auto;
+    // top: -6px;
+    display: flex;
+    width: 230px;
+    height: 32px;
+    >div {
+        // position: relative;
+        // width: 100%;
+        // background-color: var(--thmscnclr);
+        // padding: 5px 10px;
+        // border-radius: 5px;
+        position: relative;
+        width: 100%;
+        background-color: #2A3058;
+        padding: 5px 10px;
+        border-radius: 6px;
+        input {
+            border: none;
+            background: transparent;
+            color: var(--thmtxt);
+            width: 100%;
+            height: 20px;
+            padding-left: 30px;
+            font-size: 14px;
+            font-weight: var(--fontRegular);
+            &::-webkit-input-placeholder {
+                /* Chrome/Opera/Safari */
+                // color: var(--thmtxt);
+                color: #C3C4D0;
+            }
+            &::-moz-placeholder {
+                /* Firefox 19+ */
+                color: #C3C4D0;
+            }
+            &:-ms-input-placeholder {
+                /* IE 10+ */
+                color: #C3C4D0;
+            }
+            &:-moz-placeholder {
+                /* Firefox 18- */
+                color: #C3C4D0;
+            }
+        }
+        i {
+            font-size: 16px;
+            margin-right: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 13px;
+            &:before {
+                // color: var(--thmtxt);
+                color: #D2D3D9;
+            }
+        }
+    }
+}
+
+.zpl_rProf {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .zpl_rnav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        li {
+            padding: 5px;
+            cursor: pointer;
+            i {
+                font-size: 20px;
+                &:before {
+                    transition: all 0.3s ease-out;
+                    color: var(--white);
+                }
+            }
+            &.sep {
+                position: relative;
+                margin-right: 5px;
+                padding-right: 15px;
+                &:before {
+                    content: '';
+                    @include position(absolute, 3px, 0);
+                    width: 1px;
+                    height: 24px;
+                    background-color: var(--white);
+                }
+            }
+            &:hover {
+                i {
+                    &:before {
+                        color: var(--thmbluclr);
+                        transition: all 0.3s ease-in;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            margin-right: 6px;
+        }
+    }
+    .zpl_Nvpic {
+        cursor: pointer;
+        img {
+            height: 30px;
+            width: 30px;
+            border: 2px solid var(--white);
+            border-radius: 10px;
+        }
+    }
+}

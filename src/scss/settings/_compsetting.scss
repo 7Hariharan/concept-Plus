@@ -1,0 +1,63 @@
+.zpl_compensation {
+    .zpl_tbl {
+        .nwLst {
+            td {
+                background-color: rgba(255, 254, 219, 0.5)!important;
+            }
+        }
+        .zpl_tgl {
+            font-size: 14px !important;
+        }
+        .zpl_secn {
+            >div.ztokenfield {
+                margin-top: 5px;
+            }
+        }
+    }
+    &~.zpl_mdl .zpl_popovr,
+    .zpl_popovr {
+        padding: 20px;
+        .zpl_secn {
+            .zpl_itbl {
+                td {
+                    &:first-child {
+                        width: 200px;
+                    }
+                }
+                .zselectbox {
+                    margin-left: 0px!important;
+                }
+                .ztextbox {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &~.zpl_mdl {
+        .zpl_secn {
+            .ztextbox__icon {
+                font-size: 12px;
+                font-style: normal;
+            }
+            .ztextbox--group {
+                .zpl_lnk {
+                    position: absolute;
+                    right: 10px;
+                    z-index: 100;
+                    top: 10px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .zpl_idiv_sel {
+        span {
+            float: left;
+        }
+        b {
+            float: left;
+            width: 254px;
+            padding-left: 4px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{{!-- <a onclick="setswitch('settings/services')" class="clsArw"><i class="IC-l-ar-dwn"></i> </a> --}}
+
+{{#each this}}
+{{!-- <b>{{modulename}}</b>  --}}
+<ul class="tab-pane">
+    {{#each list}}
+        <li listid="{{listid}}" title="{{title}}" class="{{class}}"><a onclick="{{click}}">{{name}} <em class="{{clas}}">{{#if clas}}3{{/if}}</em></a></li>
+    {{/each}}
+</ul>
+{{!-- {{#if elips}}
+<i class="IC-more" onclick="moreicon(event,this,'menumore')"></i>
+<div id="menumore" class="zpl_drpdwn" style="top: 45px;right: 20px;">
+<ul class="">
+     {{#each adlist}}
+        <li listid="{{adlistid}}" title="{{adtitle}}">
+            <span onclick="{{adclick}}">{{adname}}</span>
+        </li>
+    {{/each}}
+</ul>
+</div>
+{{/if}} --}}
+{{/each}}

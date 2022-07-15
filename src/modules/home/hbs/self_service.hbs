@@ -1,0 +1,72 @@
+<div class="zpl_container DN" id="home_me">
+    <div class="zpl_iwrpr">
+        <div class="zpl_iwrprrgt">
+            <div class="zpl_act">
+                <div class="zpl_rgtcnt">
+                    <ul class="tab-pane">
+                            {{!-- <li listid="" title="Dashboard" class="zpl_act"><a onclick="showsubtabs('me_dash',this)">Dashboard</a></li> --}}
+                            <li listid="" title="Profile" class="zpl_act"><a onclick="showsubtabs('me_prof',this)">Profile</a></li>
+                            <li listid="" title="Attendance" class=""><a onclick="showsubtabs('me_attnd',this)">Attendance</a></li>
+                            <li listid="" title="Training" class=""><a onclick="showsubtabs('me_train',this)">Training</a></li>
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_serv',this)">Services</a></li>
+                            <li listid="" title="Services" class=""><i onclick="moreicon(event,this,'memore')" class="zpl_ibg PI_more"></i></li>
+                    </ul>
+                    {{!-- <div id="me_dash">
+                        <img src="../../images/cmn/dash.png" style="padding: 0 2px;">
+                    </div> --}}
+                    <div id="me_prof" style="padding: 0 26px;">
+                        <img src="../../images/cmn/proflhd.png" style="border-radius: 12px;" alt="">
+                        <img src="../../images/cmn/proflbdy.png" alt="">
+                    </div>
+                    <div id="me_attnd" class="DN" style="padding: 0 10px;">
+                        <img src="../../images/cmn/attnd.png" alt="">
+                    </div>
+                    <div id="me_train" class="DN" style="padding: 0 8px;">
+                        <div class="zpl_btnmnu" style="    padding-right: 20px;position: absolute;width: auto;right: 70px;left: unset;top: 73px;background: transparent;">
+                            <div class="zpl_rgt">
+                                <button class="zlabel zlabel--blue zlabel--medium" data-popup-open="coursebrowse">Browse course</button>
+                            </div>
+                        </div>
+                        <img src="../../images/cmn/train.png" alt="">
+                    </div>
+                    <div id="me_serv" class="DN">
+                        
+                        <img src="../../images/cmn/service.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-modal-box="coursebrowse" class="zpl_mdl zpl_mlg zpl_mcenter">
+  <div class="zpl_minr">
+    <div class="zpl_mhder">
+      <div>
+        <h4>Browse course</h4>
+      </div>
+      <a class="_cls PI_cls"></a>
+    </div>
+    <div class="zpl_mcnt zpl_fm">
+      <form>
+        <img src="../../images/cmn/cat.png" alt="">
+      </form>
+    </div>
+    {{!-- <div class="zpl_mfoter">
+      <button type="button" class="zlabel zlabel--blue zlabel--medium">Save</button>
+      <button type="button" class="zlabel zlabel--outline zlabel--medium">Cancel</button>
+    </div> --}}
+  </div>
+</div>
+
+<ul id="memore" class="zpl_drpdwn" style="top: 60px;left: 372px;">
+  <li>Files</li>
+  <li>KRA</li>
+  <li>My competency</li>
+  <li>Compensation</li>
+  <li>Review</li>
+  <li>All requests</li>
+  <li>Completed work items</li>
+  <li>Career growth</li>
+</ul>

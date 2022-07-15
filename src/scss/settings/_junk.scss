@@ -1,0 +1,25 @@
+// .zpl_tbl {
+//     th {
+//         div,
+//         b {
+//             background-color: red;
+//         }
+//     }
+// }
+// .zpl_secn {
+//     div {
+//         +div {
+//             background-color: red;
+//         }
+//     }
+// }
+.flag {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/flags.png) no-repeat;
+}
+
+.zpl_iwrpr .zpl_cntrwrp.fltrgt .zpl_fltclps>div>font {
+    display: none;
+}

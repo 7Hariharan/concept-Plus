@@ -1,0 +1,449 @@
+@@include('../../../common/html/head.html',{ "title": "Modules", "settingshbs":"../js/hbsmodule_output.js"})
+<!-- HTML Head -->
+
+<!-- Top Band -->
+@@include('../../../common/html/left.html')
+<!-- Top Band -->
+
+<div class="zpl_outer" id="homelanding1">
+    <div class="zpl_topmnu">
+
+        <ul class="tab-pane">
+            <li listid="" title="Dashboard" class="zpl_act"><a onclick="showtabs('home_dash',this)">Dashboard <em class=""></em></a></li>
+            <li listid="" title="Me" class=""><a onclick="showtabs('home_me',this)">Me <em class=""></em></a></li>
+            <li listid="" title="Team" class=""><a onclick="showtabs('home_team',this)">Team <em class=""></em></a></li>
+            <li listid="" title="Organization" class=""><a onclick="showtabs('home_organization',this)">Organization <em class=""></em></a></li>
+        </ul>
+    </div>
+    <div class="zpl_container" id="home_dash">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt" style="padding:0;">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <div id="me_dash">
+                            <h2 style="padding: 24px;background: red;color: #fff;text-align: center;">* People plus widgets can be customized in dashboard *</h2>
+                            <img src="../../images/cmn/dash2.png" style="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zpl_container DN" id="home_me">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <ul class="tab-pane">
+                            <li listid="" title="Profile" class="zpl_act"><a onclick="showsubtabs('me_prof',this)">Profile</a></li>
+                            <li listid="" title="Attendance" class=""><a onclick="showsubtabs('me_attnd',this)">Attendance</a></li>
+                            <li listid="" title="Training" class=""><a onclick="showsubtabs('me_train',this)">Training</a></li>
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_serv',this)">Services</a></li>
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_payrol',this)" class="plus">Payroll</a></li>
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_vault',this)" class="plus">Vault</a></li>
+                            <li listid="" title="Services" class=""><i onclick="moreicon(event,this,'memore')" class="zpl_ibg PI_more"></i></li>
+                        </ul>
+                        <div id="me_prof" style="padding: 0 26px;">
+                            <img src="../../images/cmn/proflhd.png" style="border-radius: 12px;" alt="">
+                            <img src="../../images/cmn/proflbdy.png" alt="">
+                        </div>
+                        <div id="me_attnd" class="DN" style="padding: 0 10px;">
+                            <img src="../../images/cmn/attnd.png" alt="">
+                        </div>
+                        <div id="me_train" class="DN" style="padding: 0 8px;">
+                            <div class="zpl_btnmnu" style="    padding-right: 20px;position: absolute;width: auto;right: 70px;left: unset;top: 73px;background: transparent;">
+                                <div class="zpl_rgt">
+                                    <button class="zlabel zlabel--blue zlabel--medium" data-popup-open="coursebrowse">Browse course</button>
+                                </div>
+                            </div>
+                            <img src="../../images/cmn/train.png" alt="">
+                        </div>
+                        <div id="me_serv" class="DN">
+
+                            <img src="../../images/cmn/service.png" alt="">
+
+                        </div>
+                        <div id="me_payrol" class="DN">
+
+                            <img src="../../images/cmn/payroll.png" alt="">
+
+                        </div>
+                        <div id="me_vault" class="DN">
+
+                            <img src="../../images/cmn/vault.png" alt="" style="padding: 0 30px;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-modal-box="coursebrowse" class="zpl_mdl zpl_mlg zpl_mcenter">
+        <div class="zpl_minr">
+            <div class="zpl_mhder">
+                <div>
+                    <h4>Browse course</h4>
+                </div>
+                <a class="_cls PI_cls"></a>
+            </div>
+            <div class="zpl_mcnt zpl_fm">
+                <form>
+                    <img src="../../images/cmn/cat.png" alt="">
+                </form>
+            </div>
+            {{!--
+            <div class="zpl_mfoter">
+                <button type="button" class="zlabel zlabel--blue zlabel--medium">Save</button>
+                <button type="button" class="zlabel zlabel--outline zlabel--medium">Cancel</button>
+            </div> --}}
+        </div>
+    </div>
+
+    <ul id="memore" class="zpl_drpdwn" style="top: 60px;left: 372px;">
+        <li>Files</li>
+        <li>KRA</li>
+        <li>My competency</li>
+        <li>Compensation</li>
+        <li>Review</li>
+        <li>All requests</li>
+        <li>Completed work items</li>
+        <li>Career growth</li>
+    </ul>
+
+    <div class="zpl_container DN" id="home_team">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <ul class="tab-pane">
+                            <li listid="" title="Feeds" class="zpl_act"><a onclick="showsubtabs('team_feed',this)">Feeds</a></li>
+                            <li listid="" title="Team" class=""><a onclick="showsubtabs('team_team',this)">Team</a></li>
+                            <li listid="" title="Subordinate" class="mangvw"><a onclick="showsubtabs('team_sub',this)">Subordinate</a></li>
+                        </ul>
+                        <div id="team_feed">
+                            <img src="../../images/cmn/feed.png" alt="">
+                        </div>
+                        <div id="team_team" class="DN" style="padding-left: 4px;">
+                            <img src="../../images/cmn/view.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/team.png" alt="">
+                        </div>
+                        <div id="team_sub" class="DN">
+                            <img src="../../images/cmn/report.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zpl_container DN" id="home_organization">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <ul class="tab-pane">
+                            <li listid="" title="Anouncements" class="zpl_act"><a onclick="showsubtabs('org_anoun',this)">Anouncements</a></li>
+                            <li listid="" title="Employees" class=""><a onclick="showsubtabs('org_emp',this)">Employees</a></li>
+                            <li listid="" title="File"><a onclick="showsubtabs('org_file',this)">File</a></li>
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('org_open',this)" class="plus">Job Opening</a></li>
+                        </ul>
+                        <div id="org_anoun" class="">
+                            <img src="../../images/cmn/feed.png" alt="">
+                        </div>
+                        <div id="org_emp" class="DN" style="padding-left: 20px;">
+                            <img src="../../images/cmn/view.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/tree.png" alt="">
+                        </div>
+                        <div id="org_file" class="DN" style="padding-left: 10px;">
+                            <img src="../../images/cmn/view.png" alt="" style="    width: 260px;/* right: 26px; */margin: -7px auto 15px;/* top: 0; */margin-right: 28px;display: block;position: absolute;right: 82px;top: 60px;">
+                            <img src="../../images/cmn/file.png" alt="">
+                        </div>
+                        <div id="org_open" class="">
+                            <img src="../../images/cmn/opening.png" alt="" style="padding: 0px 30px;margin-top: -10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="zpl_outer DN" id="leavelanding1">
+    <div class="zpl_topmnu">
+
+        <ul class="tab-pane">
+            <li listid="" title="Me" class="zpl_act"><a onclick="showtabs('todo_me',this)">Me <em class=""></em></a></li>
+            <li listid="" title="Team" class="mangvw"><a onclick="showtabs('todo_team',this)">Team</a></li>
+            <li listid="" title="Organization" class="admnvw"><a onclick="showtabs('todo_org',this)">Organization <em class=""></em></a></li>
+        </ul>
+    </div>
+
+
+    <div class="zpl_container" id="todo_me">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <ul class="tab-pane">
+                            <li listid="" title="Approval" class="mangvw"><a onclick="showsubtabs('todome_aprvl',this)">Approval</a></li>
+                            <li listid="" title="Jobs" class="zpl_act"><a onclick="showsubtabs('todome_job',this)">Jobs</a></li>
+                            <li listid="" title="Goals" class=""><a onclick="showsubtabs('todome_goal',this)">Goals</a></li>
+                            <li listid="" title="Tasks" class=""><a onclick="showsubtabs('todome_task',this)">Tasks</a></li>
+                            <li listid="" title="Reviews"><a onclick="showsubtabs('todome_rvw',this)">Reviews</a></li>
+                            <li listid="" title="Recruit" class="mangvw"><a class="plus" onclick="showsubtabs('todome_rcrt',this)">Recruit</a></li>
+                        </ul>
+                        <div id="todome_aprvl" class="DN">
+                            <img src="../../images/cmn/apprvl.png" style="padding: 0 6px;">
+                        </div>
+                        <div id="todome_job">
+                            <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/job.png" style="padding: 0 4px;">
+                        </div>
+                        <div id="todome_goal" class="DN" style="">
+                            <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 18px;display: block;">
+                            <img src="../../images/cmn/mygoal.png">
+                        </div>
+                        <div id="todome_task" class="DN">
+                            <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/task.png">
+                        </div>
+                        <div id="todome_rvw" class="DN">
+                            <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/myrvw.png">
+                        </div>
+                        <div id="todome_rcrt" class="DN">
+                            <img src="../../images/cmn/recruit.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zpl_container DN" id="todo_team">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <ul class="tab-pane">
+                            <li listid="" title="Jobs" class="zpl_act"><a onclick="showsubtabs('todoteam_job',this)">Jobs</a></li>
+                            <li listid="" title="Goals" class=""><a onclick="showsubtabs('todoteam_goal',this)">Goals</a></li>
+                            <li listid="" title="Tasks" class=""><a onclick="showsubtabs('todoteam_task',this)">Tasks</a></li>
+                            <li listid="" title="Reviews"><a onclick="showsubtabs('todoteam_rvw',this)">Reviews</a></li>
+                            <li listid="" title="Recruit" class="mangvw"><a class="plus" onclick="showsubtabs('todoteam_rcrt',this)">Recruit</a></li>
+                        </ul>
+                        <div id="todoteam_job">
+                            <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/teamjob.png" style="padding: 0 4px;">
+                        </div>
+                        <div id="todoteam_goal" class="DN" style="">
+                            <img src="../../images/cmn/custvw.png" alt="" style="    width: 230px;/* right: 26px; */margin: 0 auto 15px;/* top: 0; */margin-right: 28px;display: block;position: absolute;right: 0;">
+                            <img src="../../images/cmn/dropdwn.png" style="width: 300px;border-radius: 5px;margin: 0 0 16px 20px;">
+                            <img src="../../images/cmn/mygoal.png">
+                        </div>
+                        <div id="todoteam_task" class="DN">
+                            <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/task.png">
+                        </div>
+                        <div id="todoteam_rvw" class="DN">
+                            <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                            <img src="../../images/cmn/teamrvw.png">
+                        </div>
+                        <div id="todoteam_rcrt" class="DN">
+                            <img src="../../images/cmn/recruit.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="zpl_container DN" id="todo_org">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <h2 style="padding: 24px;background: red;color: #fff;text-align: center;">* Recruit, Vault, Connect, Cliq, Expense... data will be listed in org level like below *</h2>
+                        <img src="../../images/cmn/oper.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="zpl_outer DN" id="asklanding1">
+    <div class="zpl_topmnu">
+    </div>
+    <div class="zpl_container" id="ask">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <img src="../../images/cmn/askus.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="zpl_outer DN" id="connect1">
+    <div class="zpl_topmnu">
+        <ul class="tab-pane">
+            <li listid="" title="Me" class=""><a>Channels<em class=""></em></a></li>
+            <li listid="" title="Dashboard" class="zpl_act"><a>Forums<em class=""></em></a></li>
+            <li listid="" title="Team" class=""><a>Manuals<em class=""></em></a></li>
+            <li listid="" title="Team" class=""><a>Survey<em class=""></em></a></li>
+        </ul>
+    </div>
+    <div class="zpl_container" id="overview">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <img src="../../images/cmn/pms.png" alt="" style="padding-left: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="zpl_outer DN" id="lmsmdllanding1">
+    <div class="zpl_topmnu">
+        <ul class="tab-pane">
+            <li listid="" title="Dashboard" class="zpl_act"><a>Content library<em class=""></em></a></li>
+            <li listid="" title="Me" class=""><a>My course<em class=""></em></a></li>
+            <li listid="" title="Team" class=""><a>Course catalogue<em class=""></em></a></li>
+            <li listid="" title="Organization" class=""><a>Temprorary acess<em class=""></em></a></li>
+        </ul>
+
+    </div>
+
+
+    <div class="zpl_container" id="myspace">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <img src="../../images/cmn/lms.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="zpl_outer DN" id="feed1">
+    <div class="zpl_topmnu">
+    </div>
+    <div class="zpl_container" id="customize">
+        <div class="zpl_iwrpr">
+            <img src="../../images/cmn/pro_feed.png" style="width: 100%;" alt="">
+        </div>
+    </div>
+</div>
+<div class="zpl_outer DN" id="channel1">
+    <div class="zpl_topmnu">
+    </div>
+    <div class="zpl_container" id="customize">
+        <div class="zpl_iwrpr">
+            <img src="../../images/cmn/pro_chanel.png" style="width: 100%;" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="zpl_outer DN" id="customlanding1">
+    <div class="zpl_topmnu">
+    </div>
+    <div class="zpl_container" id="customize">
+        <div class="zpl_iwrpr">
+            <div class="zpl_frmmove">
+
+                <div class="zpl_frmservices">
+                    <div class="zpl_frmhead"><span class="title" style="font-size: 17px;">Customize Tabs</span></div>
+                    <div class="zpl_frmout">
+                        <div class="zpl_ssearch">
+                            <input type="text" placeholder="Search" class="ztextbox">
+                            <i class="PI_lens"></i>
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="zpl_drpopen" data-nav="service_organisation">
+                                    <div>
+                                        <ul>
+                                            <li><a><i class="PI_lock"></i>Home</a></li>
+                                            <li><a><i class="PI_lock"></i>Todo</a></li>
+                                            <li><a><i class="PI_lock"></i>Askus</a></li>
+                                            <li>
+                                                <h5 style="font-size: 12px;color: #0088ff;padding-bottom: 6px;border-bottom: 1px solid #e9e9e9;padding-top: 12px;">CONNECT</h5>
+                                            </li>
+                                            <li class="" onclick="tabs('this')">
+                                                <a>
+                                                    <div class="zcheckbox">
+                                                        <input type="checkbox" class="zcheckbox__helper">
+                                                        <label class="zcheckbox__label">
+                                                                    <span class="zcheckbox__text">Feed</span>
+                                                                </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="active" onclick="tabs('this')">
+                                                <a>
+                                                    <div class="zcheckbox">
+                                                        <input type="checkbox" class="zcheckbox__helper" checked>
+                                                        <label class="zcheckbox__label">
+                                                                    <span class="zcheckbox__text">Manual</span>
+                                                                </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="" onclick="tabs('this')">
+                                                <a>
+                                                    <div class="zcheckbox">
+                                                        <input type="checkbox" class="zcheckbox__helper">
+                                                        <label class="zcheckbox__label">
+                                                                    <span class="zcheckbox__text">Townhall</span>
+                                                                </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <h5 style="font-size: 12px;color: #0088ff;padding-bottom: 6px;border-bottom: 1px solid #e9e9e9;padding-top: 12px;">CLIQ</h5>
+                                            </li>
+                                            <li class="" onclick="tabs('this')">
+                                                <a>
+                                                    <div class="zcheckbox">
+                                                        <input type="checkbox" class="zcheckbox__helper">
+                                                        <label class="zcheckbox__label">
+                                                                    <span class="zcheckbox__text">Channel</span>
+                                                                </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="" onclick="tabs('this')">
+                                                <a>
+                                                    <div class="zcheckbox">
+                                                        <input type="checkbox" class="zcheckbox__helper">
+                                                        <label class="zcheckbox__label">
+                                                                    <span class="zcheckbox__text">Chat</span>
+                                                                </label>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+@@include('../../../common/html/footer.html')
+<!-- Footer -->

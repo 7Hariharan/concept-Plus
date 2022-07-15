@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Peopleiconservice';
+    src: url('../fonts/Peopleiconservice.ttf?fbl9sn') format('truetype'), url('../fonts/Peopleiconservice.woff?fbl9sn') format('woff'), url('../fonts/Peopleiconservice.svg?fbl9sn#Peopleiconservice') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.PI_s_shifts:before,
+.PI_s_alarm:before,
+.PI_s_announce:before,
+.PI_s_assess:before,
+.PI_s_asset:before,
+.PI_s_attnd:before,
+.PI_s_awrd:before,
+.PI_s_bag:before,
+.PI_s_benefit:before,
+.PI_s_calculator:before,
+.PI_s_calendar:before,
+.PI_s_cart:before,
+.PI_s_case:before,
+.PI_s_cases:before,
+.PI_s_celebration:before,
+.PI_s_chat:before,
+.PI_s_checklist:before,
+.PI_s_cloud:before,
+.PI_s_compensation:before,
+.PI_s_compliance:before,
+.PI_s_connect:before,
+.PI_s_download:before,
+.PI_s_emp_db:before,
+.PI_s_emp_eng:before,
+.PI_s_emp_health:before,
+.PI_s_emp_relation:before,
+.PI_s_emp_srch:before,
+.PI_s_employee:before,
+.PI_s_files:before,
+.PI_s_flag:before,
+.PI_s_food:before,
+.PI_s_form:before,
+.PI_s_hlpdsk:before,
+.PI_s_help:before,
+.PI_s_holiday:before,
+.PI_s_hourglass:before,
+.PI_s_idea:before,
+.PI_s_in:before,
+.PI_s_leave:before,
+.PI_s_lms:before,
+.PI_s_location:before,
+.PI_s_medical:before,
+.PI_s_offboarding:before,
+.PI_s_office_readiness:before,
+.PI_s_onboarding:before,
+.PI_s_org:before,
+.PI_s_out:before,
+.PI_s_performance:before,
+.PI_s_printer:before,
+.PI_s_report:before,
+.PI_s_search:before,
+.PI_s_security:before,
+.PI_s_setting:before,
+.PI_s_star:before,
+.PI_s_tag:before,
+.PI_s_tt:before,
+.PI_s_training:before,
+.PI_s_transport:before,
+.PI_s_travel:before,
+.PI_s_trophy:before,
+.PI_s_vacancy:before,
+.PI_s_video:before,
+.PI_s_wallet:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Peopleiconservice' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.PI_s_shifts:before {
+    content: "\e900";
+}
+
+.PI_s_alarm:before {
+    content: "\e901";
+}
+
+.PI_s_announce:before {
+    content: "\e902";
+}
+
+.PI_s_assess:before {
+    content: "\e903";
+}
+
+.PI_s_asset:before {
+    content: "\e904";
+}
+
+.PI_s_attnd:before {
+    content: "\e905";
+}
+
+.PI_s_awrd:before {
+    content: "\e906";
+}
+
+.PI_s_bag:before {
+    content: "\e907";
+}
+
+.PI_s_benefit:before {
+    content: "\e908";
+}
+
+.PI_s_calculator:before {
+    content: "\e909";
+}
+
+.PI_s_calendar:before {
+    content: "\e90a";
+}
+
+.PI_s_cart:before {
+    content: "\e90b";
+}
+
+.PI_s_case:before {
+    content: "\e90c";
+}
+
+.PI_s_cases:before {
+    content: "\e90d";
+}
+
+.PI_s_celebration:before {
+    content: "\e90e";
+}
+
+.PI_s_chat:before {
+    content: "\e90f";
+}
+
+.PI_s_checklist:before {
+    content: "\e910";
+}
+
+.PI_s_cloud:before {
+    content: "\e911";
+}
+
+.PI_s_compensation:before {
+    content: "\e912";
+}
+
+.PI_s_compliance:before {
+    content: "\e913";
+}
+
+.PI_s_connect:before {
+    content: "\e914";
+}
+
+.PI_s_download:before {
+    content: "\e915";
+}
+
+.PI_s_emp_db:before {
+    content: "\e916";
+}
+
+.PI_s_emp_eng:before {
+    content: "\e917";
+}
+
+.PI_s_emp_health:before {
+    content: "\e918";
+}
+
+.PI_s_emp_relation:before {
+    content: "\e919";
+}
+
+.PI_s_emp_srch:before {
+    content: "\e91a";
+}
+
+.PI_s_employee:before {
+    content: "\e91b";
+}
+
+.PI_s_files:before {
+    content: "\e91c";
+}
+
+.PI_s_flag:before {
+    content: "\e91d";
+}
+
+.PI_s_food:before {
+    content: "\e91e";
+}
+
+.PI_s_form:before {
+    content: "\e91f";
+}
+
+.PI_s_hlpdsk:before {
+    content: "\e920";
+}
+
+.PI_s_help:before {
+    content: "\e921";
+}
+
+.PI_s_holiday:before {
+    content: "\e922";
+}
+
+.PI_s_hourglass:before {
+    content: "\e923";
+}
+
+.PI_s_idea:before {
+    content: "\e924";
+}
+
+.PI_s_in:before {
+    content: "\e925";
+}
+
+.PI_s_leave:before {
+    content: "\e926";
+}
+
+.PI_s_lms:before {
+    content: "\e927";
+}
+
+.PI_s_location:before {
+    content: "\e928";
+}
+
+.PI_s_medical:before {
+    content: "\e929";
+}
+
+.PI_s_offboarding:before {
+    content: "\e92a";
+}
+
+.PI_s_office_readiness:before {
+    content: "\e92b";
+}
+
+.PI_s_onboarding:before {
+    content: "\e92c";
+}
+
+.PI_s_org:before {
+    content: "\e92d";
+}
+
+.PI_s_out:before {
+    content: "\e92e";
+}
+
+.PI_s_performance:before {
+    content: "\e92f";
+}
+
+.PI_s_printer:before {
+    content: "\e930";
+}
+
+.PI_s_report:before {
+    content: "\e931";
+}
+
+.PI_s_search:before {
+    content: "\e932";
+}
+
+.PI_s_security:before {
+    content: "\e933";
+}
+
+.PI_s_setting:before {
+    content: "\e934";
+}
+
+.PI_s_star:before {
+    content: "\e935";
+}
+
+.PI_s_tag:before {
+    content: "\e936";
+}
+
+.PI_s_tt:before {
+    content: "\e937";
+}
+
+.PI_s_training:before {
+    content: "\e938";
+}
+
+.PI_s_transport:before {
+    content: "\e939";
+}
+
+.PI_s_travel:before {
+    content: "\e93a";
+}
+
+.PI_s_trophy:before {
+    content: "\e93b";
+}
+
+.PI_s_vacancy:before {
+    content: "\e93c";
+}
+
+.PI_s_video:before {
+    content: "\e93d";
+}
+
+.PI_s_wallet:before {
+    content: "\e93e";
+}

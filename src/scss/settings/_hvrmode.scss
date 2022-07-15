@@ -1,0 +1,59 @@
+// * {
+//   transition-property: color, background-color;
+//   transition-duration: 0.3s;
+// }
+
+.zlabel {
+  &.zlabel--blue {
+    &:hover {
+      background-color: hsla(208deg, 100%, 60%, 45%);
+    }
+  }
+}
+
+.zpl_dtbl>div ul:hover,
+.zpl_tblres .zpl_tbl tr:hover td {
+  background: var(--tablehover);
+}
+
+.zpl_ibg {
+  &:hover {
+    // border-radius: 10px;
+    // background-color: #fff;
+  }
+}
+
+.zpl_topmnu>ul>li {
+  &>a {
+    &::before {
+      transition: all 0.3s;
+      width: 0;
+      // background-color: #eaeaea;
+    }
+    &:hover {
+      &::before {
+        width: calc(100% - 20px);
+        background-color: transparent;
+      }
+    }
+  }
+  &.zpl_act {
+    a {
+      &::before {
+        width: calc(100% - 20px);
+        background-color: var(--actioncolor);
+      }
+      &:hover {
+        &::before {
+          width: calc(100% - 20px);
+          background-color: var(--actioncolor);
+        }
+      }
+    }
+  }
+}
+
+.s_wrap:hover .s_lst:not(:hover) {
+  background: var(--thmbg);
+  opacity: 0.7;
+}

@@ -1,0 +1,123 @@
+//Dropdown Menu
+.zpl_drpdwn {
+    margin-top: 6px;
+    transition: margin-top .2s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09%);
+    border: none;
+    border-radius: $radiuscommon;
+    // padding: 8px;
+    position: absolute;
+    min-width: 180px;
+    display: none;
+    z-index: 111;
+    max-width: 300px;
+    overflow: hidden;
+    font-weight: var(--fontRegular);
+    &.zmenu {
+        li {
+            align-items: center;
+        }
+    }
+    .zpl_search {
+        max-width: 100%;
+    }
+    &.zpl_shw {
+        display: block;
+    }
+    li {
+        padding: 10px 12px;
+        cursor: pointer;
+        background-color: var(--thmbg);
+        text-align: left;
+        &.zmenu__separator {
+            background-color: var(--thmscnclr);
+            padding: 0;
+            border-radius: 0;
+            margin: 0;
+            cursor: default;
+            &:hover {
+                background-color: var(--thmscnclr);
+            }
+        }
+        &.red {
+            --txt6clr: var(--primaryredclr);
+            --txt2clr: var(--primaryredclr);
+            &.on-hover {
+                .zmenu__text {
+                    color: var(--primaryredclr);
+                }
+            }
+            &:hover {
+                color: currentColor;
+                --txt2clr: var(--primaryredclr);
+                --drophover: var(--white);
+            }
+        }
+        [class*="IC-"] {
+            color: var(--txt6clr);
+            margin-right: 10px;
+        }
+        .zmenu__text {
+            font-size: var(--fontSz14);
+            color: var(--txt2clr);
+        }
+        &:hover {
+            background-color: var(--drophover);
+            [class*="IC-"] {
+                color: var(--txt2clr);
+            }
+        }
+    }
+}
+
+.zpl_drpdwnic { 
+    &.zpl_shw {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    li {
+        display: inline-flex;
+        border: 1px solid #f5f5f5;
+        flex: 0 0 0;
+        font-size: 20px;
+        color: var(--txt2clr);
+        border-radius:4px;
+
+        &>i {
+            font-size: 20px;
+            
+        }
+        .zmenu__svg{
+            fill:var(--txt2clr);
+        }
+        .zmenu__iconcontainer{
+            margin: 0;
+            padding: 0;
+            width: auto;
+            height: auto;
+        }
+        &.zpl_sel{
+            background-color: var(--actioncolorlite);
+            color: var(--txt2clr);
+            border-color: var(--actioncolor);
+            i{
+                .zmenu__svg{
+                    fill: var(--actioncolor);
+                }
+                
+            }
+            &:hover{
+                background-color: var(--actioncolorlite);
+                color: var(--txt2clr);
+                border-color: var(--actioncolor);
+            }
+        }
+    }
+    .zmenu__body{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:10px;
+        padding: 10px;
+    }
+}
